@@ -16,7 +16,7 @@ import javax.validation.constraints.*;
  * Hop
  */
 @Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2022-09-25T13:17:41.556Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2022-09-26T19:50:51.461Z[GMT]")
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.PROPERTY, property = "hopType", visible = true )
 @JsonSubTypes({
         @JsonSubTypes.Type(value = Warehouse.class, name = "warehouse"),
