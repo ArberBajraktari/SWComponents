@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="swagger-spring" />
         <module name="SWComponents" />
+        <module name="openapi-spring" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="SWComponents" options="-parameters" />
+      <module name="openapi-spring" options="-parameters" />
       <module name="swagger-spring" options="-parameters" />
     </option>
   </component>
