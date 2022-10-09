@@ -28,7 +28,9 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: SWC-Artifact
-        path: staging
+        path: target/openapi-spring-1.22.1.jar
+        
+        
   deploy:
     #Depends on build's job
     needs: build
@@ -54,5 +56,5 @@ jobs:
           environment_name: Springbootdeploy-env
           version_label: ${{github.SHA}}
           region: us-east-1
-          deployment_package: SWC-Artifact
+          deployment_package: target/openapi-spring-1.22.1.jar
 
