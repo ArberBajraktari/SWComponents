@@ -54,5 +54,5 @@ jobs:
           environment_name: Springbootdeploy-env
           version_label: ${{github.SHA}}
           region: us-east-1
-          deployment_package: SWC-Artifact.jar
+          deployment_package: SWC-Artifact
 
