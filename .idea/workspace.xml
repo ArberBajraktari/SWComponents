@@ -5,9 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef4560f1-30ba-481f-8ea8-0ac60e7ae3fa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/TransferwarehouseAllOf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/TruckAllOf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/Warehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/Warehouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/WarehouseAllOf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/WarehouseAllOfNextHops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/WarehouseNextHops.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/ParcelApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/impl/ParcelApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/WarehouseApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/impl/WarehouseApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/OpenApiGeneratorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/OpenApiGeneratorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/RFC3339DateFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/RFC3339DateFormat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/configuration/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/configuration/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/configuration/SpringDocConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/configuration/SpringDocConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/TransferwarehouseAllOf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/TruckAllOf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/Warehouse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/Warehouse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/WarehouseAllOf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/WarehouseAllOfNextHops.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/services/ParcelApiController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/services/WarehouseApiController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/openapitools/OpenApiGeneratorApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/openapitools/RFC3339DateFormat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/openapitools/configuration/HomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/openapitools/configuration/SpringDocConfiguration.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,30 +49,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "openjdk-19",
-    "last_opened_file_path": "/Users/arberbajraktari/Documents/FH/SEM_5/SWK/SWComponents",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "show.run.dashboard.notification": "false",
-    "spring.configuration.checksum": "72ac15afc2f65991852fd99191a512d0"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
   <component name="RunManager" selected="Spring Boot.OpenApiGeneratorApplication">
+    <configuration name="OpenApiGeneratorApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="swagger-spring" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="at.fhtw.swen3.OpenApiGeneratorApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OpenApiGeneratorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="openapi-spring" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.openapitools.OpenApiGeneratorApplication" />
+      <module name="swagger-spring" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="at.fhtw.swen3.OpenApiGeneratorApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -63,13 +83,13 @@
     </configuration>
     <configuration name="Swagger2SpringBoot" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="SWComponents" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="at.fhtw.swen3.Swagger2SpringBoot" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="at.fhtw.swen3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="at.fhtw.swen3.Swagger2SpringBoot" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -92,6 +112,7 @@
       <workItem from="1664222313673" duration="108000" />
       <workItem from="1664222452746" duration="447000" />
       <workItem from="1664990106222" duration="317000" />
+      <workItem from="1665485698430" duration="993000" />
     </task>
     <servers />
   </component>
