@@ -5,50 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef4560f1-30ba-481f-8ea8-0ac60e7ae3fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/ErrorEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/GeoCoordinateEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/HopArrivalEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/HopEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/RecipientEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/TransferwarehouseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/TruckEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/WarehouseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/WarehouseNextHopsEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForThree/ParcelEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/Error.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/dto/Error.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/GeoCoordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/dto/GeoCoordinate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/Hop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/dto/Hop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/HopArrival.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/dto/HopArrival.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/NewParcelInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/dto/NewParcelInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/Parcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/dto/Parcel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/Recipient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/dto/Recipient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/TrackingInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/dto/TrackingInformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/Transferwarehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/dto/Transferwarehouse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/dto/Truck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/Warehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/dto/Warehouse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/WarehouseNextHops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/dto/WarehouseNextHops.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/ParcelApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/ParcelApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/WarehouseApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/WarehouseApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/impl/ParcelApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/impl/ParcelApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/impl/WarehouseApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/impl/WarehouseApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/Error.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/GeoCoordinate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/Hop.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/HopArrival.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/NewParcelInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/Parcel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/Recipient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/TrackingInformation$StateEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/TrackingInformation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/Transferwarehouse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/Truck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/Warehouse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/WarehouseNextHops.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/services/ParcelApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/services/ParcelApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/services/WarehouseApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/services/WarehouseApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/services/impl/ParcelApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/services/impl/ParcelApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/services/impl/WarehouseApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/services/impl/WarehouseApiController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/ErrorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/ErrorEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/GeoCoordinateEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/GeoCoordinateEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/HopArrivalEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/HopArrivalEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/HopEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/HopEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/RecipientEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/RecipientEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/TransferwarehouseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/TransferwarehouseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/TruckEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/TruckEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/WarehouseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/WarehouseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/WarehouseNextHopsEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/WarehouseNextHopsEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/mapper/ErrorMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/mapper/ErrorMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
