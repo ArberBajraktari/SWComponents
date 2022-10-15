@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef4560f1-30ba-481f-8ea8-0ac60e7ae3fa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/entityTests/RecipientEntityTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/HopArrivalEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/HopArrivalEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/RecipientEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/RecipientEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForThree/ParcelEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForThree/ParcelEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/entityForEach/HopArrivalEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/entityForEach/HopArrivalEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/entityForEach/RecipientEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/entityForEach/RecipientEntity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/ErrorMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/ErrorMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/GeoCoordinateMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/GeoCoordinateMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/HopArrivalMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/HopArrivalMapperImpl.java" afterDir="false" />
@@ -54,7 +61,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HandsOn_MapValidate" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -66,11 +73,44 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="entityTests" />
       <recent name="mapperTests" />
       <recent name="at.fhtw.swen3.services.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RecipientMapperTest.dtoToEntity">
+  <component name="RunManager" selected="Spring Boot.OpenApiGeneratorApplication">
+    <configuration name="RecipientEntityTest.validationTest_NotOk" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="swagger-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="entityTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="entityTests" />
+      <option name="MAIN_CLASS_NAME" value="entityTests.RecipientEntityTest" />
+      <option name="METHOD_NAME" value="validationTest_NotOk" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecipientEntityTest.validationTest_Ok" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="swagger-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="entityTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="entityTests" />
+      <option name="MAIN_CLASS_NAME" value="entityTests.RecipientEntityTest" />
+      <option name="METHOD_NAME" value="validationTest_Ok" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RecipientMapperTest.dtoToEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="swagger-spring" />
       <extension name="coverage">
@@ -139,6 +179,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RecipientEntityTest.validationTest_NotOk" />
+        <item itemvalue="JUnit.RecipientEntityTest.validationTest_Ok" />
         <item itemvalue="JUnit.RecipientMapperTest.dtoToEntity" />
         <item itemvalue="JUnit.RecipientMapperTest.entityToDto" />
         <item itemvalue="Spring Boot.Swagger2SpringBoot" />
