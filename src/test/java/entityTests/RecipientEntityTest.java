@@ -20,7 +20,7 @@ class RecipientEntityTest {
     public void validationTest_Ok(){
         log.info("Test validationTest");
 
-        final RecipientEntity recipientEntity = new RecipientEntity("Mreti", "Dobrac",
+        final RecipientEntity recipientEntity = new RecipientEntity("Mreti", "Dobrac 12/12",
                 "1010", "Vienna", "Austria");
 
         ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
@@ -39,7 +39,7 @@ class RecipientEntityTest {
         log.info("Test validationTest");
 
         final RecipientEntity recipientEntity = new RecipientEntity("Mreti", "Dobrac",
-                "110", "Vienna", "Austria");
+                "110", "vienna", "Austria");
 
         ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
         Validator validator = factory.getValidator();
