@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef4560f1-30ba-481f-8ea8-0ac60e7ae3fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/entityTests/ParcelEntityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/entityTests/HopArrivalEntityTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/RecipientEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForEach/RecipientEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/entityTests/RecipientEntityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/entityTests/RecipientEntityTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/entityForEach/RecipientEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/entityForEach/RecipientEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/entityTests/RecipientEntityTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/entityTests/RecipientEntityTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/entityTests/ParcelEntityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/entityTests/ParcelEntityTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +54,22 @@
       <recent name="at.fhtw.swen3.services.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ParcelEntityTest">
+  <component name="RunManager" selected="JUnit.HopArrivalEntityTest">
+    <configuration name="HopArrivalEntityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="openapi-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="entityTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="entityTests" />
+      <option name="MAIN_CLASS_NAME" value="entityTests.HopArrivalEntityTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ParcelEntityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="openapi-spring" />
       <extension name="coverage">
@@ -120,20 +132,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mapperTests in openapi-spring" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="openapi-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mapperTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mapperTests" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="OpenApiGeneratorApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="swagger-spring" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="at.fhtw.swen3.OpenApiGeneratorApplication" />
@@ -157,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HopArrivalEntityTest" />
         <item itemvalue="JUnit.ParcelEntityTest" />
         <item itemvalue="JUnit.RecipientEntityTest" />
         <item itemvalue="JUnit.RecipientEntityTest.validationTest_NotOk" />
         <item itemvalue="JUnit.RecipientEntityTest.validationTest_Ok" />
-        <item itemvalue="JUnit.mapperTests in openapi-spring" />
       </list>
     </recent_temporary>
   </component>
