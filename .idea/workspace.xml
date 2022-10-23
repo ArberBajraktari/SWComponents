@@ -5,27 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef4560f1-30ba-481f-8ea8-0ac60e7ae3fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/mapperTests/NewParcelInfoMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mapperTests/ParcelMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mapperTests/HopArrivalMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mapperTests/HopMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mapperTests/TrackingInformationMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mapperTests/TransferwarehouseMapperTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/entityForEach/RecipientEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/entityForEach/RecipientEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/entityForEach/WarehouseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/entityForEach/WarehouseEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/entityForThree/ParcelEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/entityForThree/ParcelEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/services/mapper/NewParcelInfoMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/services/mapper/NewParcelInfoMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/services/mapper/ParcelMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/services/mapper/ParcelMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/services/mapper/TrackingInformationMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/services/mapper/TrackingInformationMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/ErrorMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/ErrorMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/GeoCoordinateMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/GeoCoordinateMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/HopArrivalMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/HopArrivalMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/HopMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/HopMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/NewParcelInfoMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/NewParcelInfoMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/ParcelMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/ParcelMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/RecipientMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/RecipientMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TrackingInformationMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TrackingInformationMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TransferwarehouseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TransferwarehouseMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TruckMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TruckMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/WarehouseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/WarehouseMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/WarehouseNextHopsMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/WarehouseNextHopsMapperImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,8 +56,8 @@
       <recent name="at.fhtw.swen3.services.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.NewParcelInfoMapperTest">
-    <configuration name="NewParcelInfoMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TransferwarehouseMapperTest">
+    <configuration name="HopArrivalMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="openapi-spring" />
       <extension name="coverage">
         <pattern>
@@ -82,13 +66,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="mapperTests" />
-      <option name="MAIN_CLASS_NAME" value="mapperTests.NewParcelInfoMapperTest" />
+      <option name="MAIN_CLASS_NAME" value="mapperTests.HopArrivalMapperTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParcelMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HopMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="openapi-spring" />
       <extension name="coverage">
         <pattern>
@@ -97,13 +81,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="mapperTests" />
-      <option name="MAIN_CLASS_NAME" value="mapperTests.ParcelMapperTest" />
+      <option name="MAIN_CLASS_NAME" value="mapperTests.HopMapperTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParcelMapperTest.dtoToEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HopMapperTest.entityToDto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="openapi-spring" />
       <extension name="coverage">
         <pattern>
@@ -112,30 +96,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="mapperTests" />
-      <option name="MAIN_CLASS_NAME" value="mapperTests.ParcelMapperTest" />
-      <option name="METHOD_NAME" value="dtoToEntity" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParcelMapperTest.entityToDto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="openapi-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mapperTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mapperTests" />
-      <option name="MAIN_CLASS_NAME" value="mapperTests.ParcelMapperTest" />
+      <option name="MAIN_CLASS_NAME" value="mapperTests.HopMapperTest" />
       <option name="METHOD_NAME" value="entityToDto" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RecipientMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TrackingInformationMapperTest.entityToDto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="openapi-spring" />
       <extension name="coverage">
         <pattern>
@@ -144,7 +112,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="mapperTests" />
-      <option name="MAIN_CLASS_NAME" value="mapperTests.RecipientMapperTest" />
+      <option name="MAIN_CLASS_NAME" value="mapperTests.TrackingInformationMapperTest" />
+      <option name="METHOD_NAME" value="entityToDto" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransferwarehouseMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="openapi-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mapperTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mapperTests" />
+      <option name="MAIN_CLASS_NAME" value="mapperTests.TransferwarehouseMapperTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -173,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.NewParcelInfoMapperTest" />
-        <item itemvalue="JUnit.ParcelMapperTest" />
-        <item itemvalue="JUnit.ParcelMapperTest.dtoToEntity" />
-        <item itemvalue="JUnit.ParcelMapperTest.entityToDto" />
-        <item itemvalue="JUnit.RecipientMapperTest" />
+        <item itemvalue="JUnit.TransferwarehouseMapperTest" />
+        <item itemvalue="JUnit.TrackingInformationMapperTest.entityToDto" />
+        <item itemvalue="JUnit.HopArrivalMapperTest" />
+        <item itemvalue="JUnit.HopMapperTest" />
+        <item itemvalue="JUnit.HopMapperTest.entityToDto" />
       </list>
     </recent_temporary>
   </component>
