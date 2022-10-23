@@ -3,15 +3,12 @@ package mapperTests;
 import at.fhtw.swen3.persistence.entityForEach.RecipientEntity;
 import at.fhtw.swen3.persistence.entityForThree.ParcelEntity;
 import at.fhtw.swen3.services.dto.NewParcelInfo;
-import at.fhtw.swen3.services.dto.Parcel;
 import at.fhtw.swen3.services.dto.Recipient;
 import at.fhtw.swen3.services.mapper.NewParcelInfoMapper;
-import at.fhtw.swen3.services.mapper.ParcelMapper;
 import at.fhtw.swen3.services.mapper.RecipientMapper;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class NewParcelInfoMapperTest {
 

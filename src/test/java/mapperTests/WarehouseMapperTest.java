@@ -1,11 +1,8 @@
 package mapperTests;
 
-import at.fhtw.swen3.persistence.entityForEach.TruckEntity;
 import at.fhtw.swen3.persistence.entityForEach.WarehouseEntity;
-import at.fhtw.swen3.services.dto.Truck;
 import at.fhtw.swen3.services.dto.Warehouse;
 import at.fhtw.swen3.services.dto.WarehouseNextHops;
-import at.fhtw.swen3.services.mapper.TruckMapper;
 import at.fhtw.swen3.services.mapper.WarehouseMapper;
 import org.junit.jupiter.api.Test;
 
@@ -13,7 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class WarehouseMapperTest {
 

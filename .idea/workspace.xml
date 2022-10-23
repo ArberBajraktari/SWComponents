@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef4560f1-30ba-481f-8ea8-0ac60e7ae3fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/mapperTests/TruckMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mapperTests/WarehouseMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mapperTests/WarehouseNextHopsMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mapperTests/ErrorMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mapperTests/GeoCoordinateMapperTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mapperTests/HopArrivalMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapperTests/HopArrivalMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mapperTests/NewParcelInfoMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapperTests/NewParcelInfoMapperTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/mapperTests/TrackingInformationMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapperTests/TrackingInformationMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mapperTests/WarehouseMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapperTests/WarehouseMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mapperTests/WarehouseNextHopsMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapperTests/WarehouseNextHopsMapperTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +59,8 @@
       <recent name="at.fhtw.swen3.services.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WarehouseNextHopsMapperTest">
-    <configuration name="TrackingInformationMapperTest.entityToDto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ErrorMapperTest">
+    <configuration name="ErrorMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="openapi-spring" />
       <extension name="coverage">
         <pattern>
@@ -66,14 +69,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="mapperTests" />
-      <option name="MAIN_CLASS_NAME" value="mapperTests.TrackingInformationMapperTest" />
-      <option name="METHOD_NAME" value="entityToDto" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="mapperTests.ErrorMapperTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransferwarehouseMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GeoCoordinateMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="openapi-spring" />
       <extension name="coverage">
         <pattern>
@@ -82,7 +84,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="mapperTests" />
-      <option name="MAIN_CLASS_NAME" value="mapperTests.TransferwarehouseMapperTest" />
+      <option name="MAIN_CLASS_NAME" value="mapperTests.GeoCoordinateMapperTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ErrorMapperTest" />
+        <item itemvalue="JUnit.GeoCoordinateMapperTest" />
         <item itemvalue="JUnit.WarehouseNextHopsMapperTest" />
         <item itemvalue="JUnit.WarehouseMapperTest" />
         <item itemvalue="JUnit.TruckMapperTest" />
-        <item itemvalue="JUnit.TransferwarehouseMapperTest" />
-        <item itemvalue="JUnit.TrackingInformationMapperTest.entityToDto" />
       </list>
     </recent_temporary>
   </component>
