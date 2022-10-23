@@ -2,6 +2,8 @@ package at.fhtw.swen3.persistence.entityForThree;
 
 
 import at.fhtw.swen3.services.dto.Recipient;
+import at.fhtw.swen3.services.dto.TrackingInformation;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -30,4 +32,5 @@ public class ParcelEntity {
     //NewParcelInfo
     @Pattern(regexp = "^[A-Z0-9]{9}$")
     private String trackingId;
+
 }

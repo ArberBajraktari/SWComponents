@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef4560f1-30ba-481f-8ea8-0ac60e7ae3fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/mapperTests/ErrorMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mapperTests/GeoCoordinateMapperTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mapperTests/HopArrivalMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapperTests/HopArrivalMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mapperTests/NewParcelInfoMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapperTests/NewParcelInfoMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForThree/ParcelEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/persistence/entityForThree/ParcelEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/mapperTests/TrackingInformationMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapperTests/TrackingInformationMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mapperTests/WarehouseMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapperTests/WarehouseMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mapperTests/WarehouseNextHopsMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapperTests/WarehouseNextHopsMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/entityForThree/ParcelEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/fhtw/swen3/persistence/entityForThree/ParcelEntity.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +55,7 @@
       <recent name="at.fhtw.swen3.services.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ErrorMapperTest">
+  <component name="RunManager" selected="JUnit.mapperTests in openapi-spring">
     <configuration name="ErrorMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="openapi-spring" />
       <extension name="coverage">
@@ -90,7 +86,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TruckMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TrackingInformationMapperTest.dtoToEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="openapi-spring" />
       <extension name="coverage">
         <pattern>
@@ -99,23 +95,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="mapperTests" />
-      <option name="MAIN_CLASS_NAME" value="mapperTests.TruckMapperTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WarehouseMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="openapi-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mapperTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mapperTests" />
-      <option name="MAIN_CLASS_NAME" value="mapperTests.WarehouseMapperTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="mapperTests.TrackingInformationMapperTest" />
+      <option name="METHOD_NAME" value="dtoToEntity" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -131,6 +113,20 @@
       <option name="PACKAGE_NAME" value="mapperTests" />
       <option name="MAIN_CLASS_NAME" value="mapperTests.WarehouseNextHopsMapperTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mapperTests in openapi-spring" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="openapi-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mapperTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mapperTests" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -158,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.mapperTests in openapi-spring" />
+        <item itemvalue="JUnit.TrackingInformationMapperTest.dtoToEntity" />
         <item itemvalue="JUnit.ErrorMapperTest" />
         <item itemvalue="JUnit.GeoCoordinateMapperTest" />
         <item itemvalue="JUnit.WarehouseNextHopsMapperTest" />
-        <item itemvalue="JUnit.WarehouseMapperTest" />
-        <item itemvalue="JUnit.TruckMapperTest" />
       </list>
     </recent_temporary>
   </component>
