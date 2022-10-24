@@ -1,4 +1,4 @@
-package entityTests;
+package entity;
 
 import at.fhtw.swen3.persistence.entity.RecipientEntity;
 import org.junit.jupiter.api.Test;

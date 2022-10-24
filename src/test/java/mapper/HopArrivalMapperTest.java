@@ -1,4 +1,4 @@
-package mapperTests;
+package mapper;
 
 import at.fhtw.swen3.persistence.entity.HopArrivalEntity;
 import at.fhtw.swen3.services.dto.HopArrival;
