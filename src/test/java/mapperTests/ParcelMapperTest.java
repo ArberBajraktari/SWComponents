@@ -1,7 +1,7 @@
 package mapperTests;
 
-import at.fhtw.swen3.persistence.entityForEach.RecipientEntity;
-import at.fhtw.swen3.persistence.entityForThree.ParcelEntity;
+import at.fhtw.swen3.persistence.entity.RecipientEntity;
+import at.fhtw.swen3.persistence.entity.ParcelEntity;
 import at.fhtw.swen3.services.dto.Parcel;
 import at.fhtw.swen3.services.dto.Recipient;
 import at.fhtw.swen3.services.mapper.ParcelMapper;

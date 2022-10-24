@@ -1,6 +1,6 @@
 package mapperTests;
 
-import at.fhtw.swen3.persistence.entityForEach.WarehouseEntity;
+import at.fhtw.swen3.persistence.entity.WarehouseEntity;
 import at.fhtw.swen3.services.dto.Warehouse;
 import at.fhtw.swen3.services.dto.WarehouseNextHops;
 import at.fhtw.swen3.services.mapper.WarehouseMapper;

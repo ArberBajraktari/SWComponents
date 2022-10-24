@@ -1,4 +1,4 @@
-package at.fhtw.swen3.persistence.entityForEach;
+package at.fhtw.swen3.persistence.entity;
 
 import at.fhtw.swen3.services.dto.Hop;
 import lombok.AllArgsConstructor;

@@ -1,6 +1,6 @@
 package mapperTests;
 
-import at.fhtw.swen3.persistence.entityForEach.ErrorEntity;
+import at.fhtw.swen3.persistence.entity.ErrorEntity;
 import at.fhtw.swen3.services.dto.Error;
 import at.fhtw.swen3.services.mapper.ErrorMapper;
 import org.junit.jupiter.api.Test;

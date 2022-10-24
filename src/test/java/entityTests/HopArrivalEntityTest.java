@@ -1,9 +1,7 @@
 package entityTests;
 
-import at.fhtw.swen3.persistence.entityForEach.HopArrivalEntity;
-import at.fhtw.swen3.persistence.entityForEach.RecipientEntity;
-import at.fhtw.swen3.persistence.entityForThree.ParcelEntity;
-import at.fhtw.swen3.services.dto.Hop;
+import at.fhtw.swen3.persistence.entity.HopArrivalEntity;
+import at.fhtw.swen3.persistence.entity.RecipientEntity;
 import at.fhtw.swen3.services.dto.Recipient;
 import at.fhtw.swen3.services.mapper.RecipientMapper;
 import org.junit.jupiter.api.Test;

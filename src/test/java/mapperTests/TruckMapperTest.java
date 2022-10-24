@@ -1,6 +1,6 @@
 package mapperTests;
 
-import at.fhtw.swen3.persistence.entityForEach.TruckEntity;
+import at.fhtw.swen3.persistence.entity.TruckEntity;
 import at.fhtw.swen3.services.dto.Truck;
 import at.fhtw.swen3.services.mapper.TruckMapper;
 import org.junit.jupiter.api.Test;

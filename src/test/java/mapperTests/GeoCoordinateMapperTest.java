@@ -1,6 +1,6 @@
 package mapperTests;
 
-import at.fhtw.swen3.persistence.entityForEach.GeoCoordinateEntity;
+import at.fhtw.swen3.persistence.entity.GeoCoordinateEntity;
 import at.fhtw.swen3.services.dto.GeoCoordinate;
 import at.fhtw.swen3.services.mapper.GeoCoordinateMapper;
 import org.junit.jupiter.api.Test;

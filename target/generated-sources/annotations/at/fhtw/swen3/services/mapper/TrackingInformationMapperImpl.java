@@ -1,6 +1,6 @@
 package at.fhtw.swen3.services.mapper;
 
-import at.fhtw.swen3.persistence.entityForThree.ParcelEntity;
+import at.fhtw.swen3.persistence.entity.ParcelEntity;
 import at.fhtw.swen3.services.dto.Recipient;
 import at.fhtw.swen3.services.dto.TrackingInformation;
 import javax.annotation.Generated;

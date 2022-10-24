@@ -1,6 +1,6 @@
 package mapperTests;
 
-import at.fhtw.swen3.persistence.entityForEach.TransferwarehouseEntity;
+import at.fhtw.swen3.persistence.entity.TransferwarehouseEntity;
 import at.fhtw.swen3.services.dto.Transferwarehouse;
 import at.fhtw.swen3.services.mapper.TransferwarehouseMapper;
 import org.junit.jupiter.api.Test;

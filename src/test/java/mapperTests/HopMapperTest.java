@@ -1,6 +1,6 @@
 package mapperTests;
 
-import at.fhtw.swen3.persistence.entityForEach.HopEntity;
+import at.fhtw.swen3.persistence.entity.HopEntity;
 import at.fhtw.swen3.services.dto.GeoCoordinate;
 import at.fhtw.swen3.services.dto.Hop;
 import at.fhtw.swen3.services.mapper.HopMapper;

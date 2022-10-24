@@ -1,6 +1,6 @@
 package entityTests;
 
-import at.fhtw.swen3.persistence.entityForEach.RecipientEntity;
+import at.fhtw.swen3.persistence.entity.RecipientEntity;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

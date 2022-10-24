@@ -1,4 +1,4 @@
-package at.fhtw.swen3.persistence.entityForEach;
+package at.fhtw.swen3.persistence.entity;
 
 
 import lombok.AllArgsConstructor;

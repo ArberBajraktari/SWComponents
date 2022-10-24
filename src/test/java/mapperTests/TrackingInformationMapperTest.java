@@ -1,16 +1,12 @@
 package mapperTests;
 
-import at.fhtw.swen3.persistence.entityForEach.HopArrivalEntity;
-import at.fhtw.swen3.persistence.entityForEach.RecipientEntity;
-import at.fhtw.swen3.persistence.entityForEach.TruckEntity;
-import at.fhtw.swen3.persistence.entityForThree.ParcelEntity;
+import at.fhtw.swen3.persistence.entity.RecipientEntity;
+import at.fhtw.swen3.persistence.entity.ParcelEntity;
 import at.fhtw.swen3.services.dto.*;
 import at.fhtw.swen3.services.mapper.RecipientMapper;
 import at.fhtw.swen3.services.mapper.TrackingInformationMapper;
-import at.fhtw.swen3.services.mapper.TruckMapper;
 import org.junit.jupiter.api.Test;
 
-import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
