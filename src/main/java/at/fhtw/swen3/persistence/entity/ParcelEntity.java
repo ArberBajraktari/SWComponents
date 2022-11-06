@@ -6,10 +6,7 @@ import at.fhtw.swen3.services.dto.TrackingInformation;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -18,16 +15,30 @@ import javax.validation.constraints.Pattern;
 @Setter
 @AllArgsConstructor
 @Builder
+@NoArgsConstructor
+@Entity
+@Table
 public class ParcelEntity {
     //This entity unites 3 DTOs (Parcel, TrackingInformation and NewParcelInfo)
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "parcel_id")
+    private Integer id;
 
     //Parcel
     @Min(value = 0, message = "Weight should be bigger than 0,0")
     private Float weight;
+
     @NotNull
-    private Recipient recipient;
+    @JoinColumn(name = "recipient_id", referencedColumnName="recipient_id")
+    @ManyToOne
+    private RecipientEntity recipient;
+
     @NotNull
-    private Recipient sender;
+    @JoinColumn(name="sender_id", referencedColumnName="recipient_id")
+    @ManyToOne
+    private RecipientEntity sender;
 
     //TrackingInformation
     private String value;
