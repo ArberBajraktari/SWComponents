@@ -1,13 +1,12 @@
 package at.fhtw.swen3.services.mapper;
 
-import at.fhtw.swen3.persistence.entity.HopEntity;
-import at.fhtw.swen3.services.dto.GeoCoordinate;
+import at.fhtw.swen3.persistence.entities.HopEntity;
 import at.fhtw.swen3.services.dto.Hop;
 import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2022-11-05T22:14:18+0100",
+    date = "2022-11-07T12:42:51+0100",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 19.0.1 (Oracle Corporation)"
 )
 public class HopMapperImpl implements HopMapper {
@@ -25,7 +24,6 @@ public class HopMapperImpl implements HopMapper {
         hop.setDescription( hopEntity.getDescription() );
         hop.setProcessingDelayMins( hopEntity.getProcessingDelayMins() );
         hop.setLocationName( hopEntity.getLocationName() );
-        hop.setLocationCoordinates( hopEntity.getLocationCoordinates() );
 
         return hop;
     }
@@ -36,21 +34,13 @@ public class HopMapperImpl implements HopMapper {
             return null;
         }
 
-        String hopType = null;
-        String code = null;
-        String description = null;
-        Integer processingDelayMins = null;
-        String locationName = null;
-        GeoCoordinate locationCoordinates = null;
+        HopEntity hopEntity = new HopEntity();
 
-        hopType = hop.getHopType();
-        code = hop.getCode();
-        description = hop.getDescription();
-        processingDelayMins = hop.getProcessingDelayMins();
-        locationName = hop.getLocationName();
-        locationCoordinates = hop.getLocationCoordinates();
-
-        HopEntity hopEntity = new HopEntity( hopType, code, description, processingDelayMins, locationName, locationCoordinates );
+        hopEntity.setHopType( hop.getHopType() );
+        hopEntity.setCode( hop.getCode() );
+        hopEntity.setDescription( hop.getDescription() );
+        hopEntity.setProcessingDelayMins( hop.getProcessingDelayMins() );
+        hopEntity.setLocationName( hop.getLocationName() );
 
         return hopEntity;
     }

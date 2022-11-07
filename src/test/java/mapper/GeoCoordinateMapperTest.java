@@ -1,6 +1,6 @@
 package mapper;
 
-import at.fhtw.swen3.persistence.entity.GeoCoordinateEntity;
+import at.fhtw.swen3.persistence.entities.GeoCoordinateEntity;
 import at.fhtw.swen3.services.dto.GeoCoordinate;
 import at.fhtw.swen3.services.mapper.GeoCoordinateMapper;
 import org.junit.jupiter.api.Test;
@@ -12,7 +12,7 @@ public class GeoCoordinateMapperTest {
     @Test
     void entityToDto() {
         //Create Entity
-        GeoCoordinateEntity geoCoordinateEntity = new GeoCoordinateEntity(10.0,20.0);
+        GeoCoordinateEntity geoCoordinateEntity = new GeoCoordinateEntity(1, 10.0,20.0);
         //Turn Entity into DTO
         GeoCoordinate geoCoordinate = GeoCoordinateMapper.INSTANCE.entityToDto(geoCoordinateEntity);
 

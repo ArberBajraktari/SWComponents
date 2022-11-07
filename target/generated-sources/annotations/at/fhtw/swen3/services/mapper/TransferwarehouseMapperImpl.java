@@ -1,12 +1,12 @@
 package at.fhtw.swen3.services.mapper;
 
-import at.fhtw.swen3.persistence.entity.TransferwarehouseEntity;
+import at.fhtw.swen3.persistence.entities.TransferwarehouseEntity;
 import at.fhtw.swen3.services.dto.Transferwarehouse;
 import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2022-11-05T22:14:19+0100",
+    date = "2022-11-07T12:42:51+0100",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 19.0.1 (Oracle Corporation)"
 )
 public class TransferwarehouseMapperImpl implements TransferwarehouseMapper {
@@ -32,15 +32,11 @@ public class TransferwarehouseMapperImpl implements TransferwarehouseMapper {
             return null;
         }
 
-        String regionGeoJson = null;
-        String logisticsPartner = null;
-        String logisticsPartnerUrl = null;
+        TransferwarehouseEntity transferwarehouseEntity = new TransferwarehouseEntity();
 
-        regionGeoJson = transferwarehouse.getRegionGeoJson();
-        logisticsPartner = transferwarehouse.getLogisticsPartner();
-        logisticsPartnerUrl = transferwarehouse.getLogisticsPartnerUrl();
-
-        TransferwarehouseEntity transferwarehouseEntity = new TransferwarehouseEntity( regionGeoJson, logisticsPartner, logisticsPartnerUrl );
+        transferwarehouseEntity.setRegionGeoJson( transferwarehouse.getRegionGeoJson() );
+        transferwarehouseEntity.setLogisticsPartner( transferwarehouse.getLogisticsPartner() );
+        transferwarehouseEntity.setLogisticsPartnerUrl( transferwarehouse.getLogisticsPartnerUrl() );
 
         return transferwarehouseEntity;
     }

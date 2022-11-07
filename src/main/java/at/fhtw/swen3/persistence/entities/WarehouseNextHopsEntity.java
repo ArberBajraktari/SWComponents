@@ -1,5 +1,4 @@
-package at.fhtw.swen3.persistence.entity;
-
+package at.fhtw.swen3.persistence.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -8,20 +7,24 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
+
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Table
-public class TransferwarehouseEntity {
+public class WarehouseNextHopsEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "transfer_wh_id")
+    @Column(name = "wh_next_hop_id")
     private Integer id;
 
-    private String regionGeoJson;
-    private String logisticsPartner;
-    private String logisticsPartnerUrl;
+    private Integer traveltimeMins;
+
+
+    @JoinColumn(name="hop_id", referencedColumnName="hop_id")
+    @ManyToOne
+    private HopEntity hop;
 }

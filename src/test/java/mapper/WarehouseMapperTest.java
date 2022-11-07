@@ -1,6 +1,7 @@
 package mapper;
 
-import at.fhtw.swen3.persistence.entity.WarehouseEntity;
+import at.fhtw.swen3.persistence.entities.WarehouseEntity;
+import at.fhtw.swen3.persistence.entities.WarehouseNextHopsEntity;
 import at.fhtw.swen3.services.dto.Warehouse;
 import at.fhtw.swen3.services.dto.WarehouseNextHops;
 import at.fhtw.swen3.services.mapper.WarehouseMapper;
@@ -13,11 +14,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class WarehouseMapperTest {
 
+    List<WarehouseNextHopsEntity> nextHoopEntity= new ArrayList<>();
     List<WarehouseNextHops> nextHoop = new ArrayList<>();
     @Test
     void entityToDto() {
         //Create Entity
-        WarehouseEntity warehouseEntity = new WarehouseEntity(2, nextHoop);
+        WarehouseEntity warehouseEntity = new WarehouseEntity(1, 2, nextHoopEntity);
         //Turn Entity into DTO
         Warehouse warehouse = WarehouseMapper.INSTANCE.entityToDto(warehouseEntity);
 

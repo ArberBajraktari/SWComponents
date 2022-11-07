@@ -1,8 +1,6 @@
 package at.fhtw.swen3.persistence.repositories;
 
-import at.fhtw.swen3.persistence.entity.ErrorEntity;
-import at.fhtw.swen3.persistence.entity.GeoCoordinateEntity;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import at.fhtw.swen3.persistence.entities.GeoCoordinateEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

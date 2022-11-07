@@ -1,12 +1,12 @@
 package at.fhtw.swen3.services.mapper;
 
-import at.fhtw.swen3.persistence.entity.RecipientEntity;
+import at.fhtw.swen3.persistence.entities.RecipientEntity;
 import at.fhtw.swen3.services.dto.Recipient;
 import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2022-11-05T22:14:19+0100",
+    date = "2022-11-07T12:42:51+0100",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 19.0.1 (Oracle Corporation)"
 )
 public class RecipientMapperImpl implements RecipientMapper {
@@ -34,19 +34,13 @@ public class RecipientMapperImpl implements RecipientMapper {
             return null;
         }
 
-        String name = null;
-        String street = null;
-        String postalCode = null;
-        String city = null;
-        String country = null;
+        RecipientEntity recipientEntity = new RecipientEntity();
 
-        name = recipient.getName();
-        street = recipient.getStreet();
-        postalCode = recipient.getPostalCode();
-        city = recipient.getCity();
-        country = recipient.getCountry();
-
-        RecipientEntity recipientEntity = new RecipientEntity( name, street, postalCode, city, country );
+        recipientEntity.setName( recipient.getName() );
+        recipientEntity.setStreet( recipient.getStreet() );
+        recipientEntity.setPostalCode( recipient.getPostalCode() );
+        recipientEntity.setCity( recipient.getCity() );
+        recipientEntity.setCountry( recipient.getCountry() );
 
         return recipientEntity;
     }

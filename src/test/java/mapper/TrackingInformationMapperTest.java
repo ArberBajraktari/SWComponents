@@ -1,7 +1,7 @@
 package mapper;
 
-import at.fhtw.swen3.persistence.entity.RecipientEntity;
-import at.fhtw.swen3.persistence.entity.ParcelEntity;
+import at.fhtw.swen3.persistence.entities.RecipientEntity;
+import at.fhtw.swen3.persistence.entities.ParcelEntity;
 import at.fhtw.swen3.services.dto.*;
 import at.fhtw.swen3.services.mapper.RecipientMapper;
 import at.fhtw.swen3.services.mapper.TrackingInformationMapper;
@@ -14,10 +14,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class TrackingInformationMapperTest {
-    RecipientEntity recipientEntity = new RecipientEntity("Mreti", "Dobrac",
+    RecipientEntity recipientEntity = new RecipientEntity(1, "Mreti", "Dobrac",
             "1010", "Vienna", "Austria");
     Recipient recipient = RecipientMapper.INSTANCE.entityToDto(recipientEntity);
-    RecipientEntity senderEntity = new RecipientEntity("Mreti", "Koplik",
+    RecipientEntity senderEntity = new RecipientEntity(1, "Mreti", "Koplik",
             "1010", "Graz", "Austria");
     Recipient sender = RecipientMapper.INSTANCE.entityToDto(senderEntity);
 
@@ -29,7 +29,7 @@ public class TrackingInformationMapperTest {
     @Test
     void entityToDto() {
         //Create TrackingInfo Entity
-        ParcelEntity parcelEntity = new ParcelEntity(10.0f, recipient, sender, "Pickup", "abcd12345");
+        ParcelEntity parcelEntity = new ParcelEntity(1, 10.0f, recipientEntity, senderEntity, "Pickup", "abcd12345");
         //Turn Entity into DTO
         //TrackingInformation trackingInformation = TrackingInformationMapper.INSTANCE.entityToDto(parcelEntity);
 

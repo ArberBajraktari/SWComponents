@@ -1,6 +1,6 @@
 package mapper;
 
-import at.fhtw.swen3.persistence.entity.RecipientEntity;
+import at.fhtw.swen3.persistence.entities.RecipientEntity;
 import at.fhtw.swen3.services.dto.Recipient;
 import at.fhtw.swen3.services.mapper.RecipientMapper;
 import org.junit.jupiter.api.Test;
@@ -11,7 +11,7 @@ class RecipientMapperTest {
 
     @Test
     void entityToDto() {
-        RecipientEntity recipientEntity = new RecipientEntity("Mreti", "Dobrac",
+        RecipientEntity recipientEntity = new RecipientEntity(1, "Mreti", "Dobrac",
                 "1010", "Vienna", "Austria");
         System.out.println(recipientEntity);
 

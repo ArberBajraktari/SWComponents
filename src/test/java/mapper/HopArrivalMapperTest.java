@@ -1,6 +1,6 @@
 package mapper;
 
-import at.fhtw.swen3.persistence.entity.HopArrivalEntity;
+import at.fhtw.swen3.persistence.entities.HopArrivalEntity;
 import at.fhtw.swen3.services.dto.HopArrival;
 import at.fhtw.swen3.services.mapper.HopArrivalMapper;
 import org.junit.jupiter.api.Test;
@@ -16,7 +16,7 @@ public class HopArrivalMapperTest {
     @Test
     void entityToDto() {
         //Create Hop Entity
-        HopArrivalEntity hopArrivalEntity = new HopArrivalEntity("abcd12345", "Description1", offsetDateTime);
+        HopArrivalEntity hopArrivalEntity = new HopArrivalEntity(1, "abcd12345", "Description1", offsetDateTime);
         //Turn Entity into DTO
         HopArrival hopArrival = HopArrivalMapper.INSTANCE.entityToDto(hopArrivalEntity);
 

@@ -1,7 +1,7 @@
 package mapper;
 
-import at.fhtw.swen3.persistence.entity.RecipientEntity;
-import at.fhtw.swen3.persistence.entity.ParcelEntity;
+import at.fhtw.swen3.persistence.entities.RecipientEntity;
+import at.fhtw.swen3.persistence.entities.ParcelEntity;
 import at.fhtw.swen3.services.dto.Parcel;
 import at.fhtw.swen3.services.dto.Recipient;
 import at.fhtw.swen3.services.mapper.ParcelMapper;
@@ -12,17 +12,17 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ParcelMapperTest {
 
-    RecipientEntity recipientEntity = new RecipientEntity("Mreti", "Dobrac",
+    RecipientEntity recipientEntity = new RecipientEntity(1, "Mreti", "Dobrac",
             "1010", "Vienna", "Austria");
     Recipient recipient = RecipientMapper.INSTANCE.entityToDto(recipientEntity);
-    RecipientEntity senderEntity = new RecipientEntity("Mreti", "Koplik",
+    RecipientEntity senderEntity = new RecipientEntity(1, "Mreti", "Koplik",
             "1010", "Graz", "Austria");
     Recipient sender = RecipientMapper.INSTANCE.entityToDto(senderEntity);
 
     @Test
     void entityToDto() {
         //Create Parcel Entity
-        ParcelEntity parcelEntity = new ParcelEntity(10.0f, recipient, sender, "10", "abcd12345");
+        ParcelEntity parcelEntity = new ParcelEntity(1, 10.0f, recipientEntity, senderEntity, "10", "abcd12345");
         //Turn Entity into DTO
         Parcel parcelDto = ParcelMapper.INSTANCE.entityToDto(parcelEntity);
 

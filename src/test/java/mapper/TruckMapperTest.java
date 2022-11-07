@@ -1,6 +1,6 @@
 package mapper;
 
-import at.fhtw.swen3.persistence.entity.TruckEntity;
+import at.fhtw.swen3.persistence.entities.TruckEntity;
 import at.fhtw.swen3.services.dto.Truck;
 import at.fhtw.swen3.services.mapper.TruckMapper;
 import org.junit.jupiter.api.Test;
@@ -12,7 +12,7 @@ public class TruckMapperTest {
     @Test
     void entityToDto() {
         //Create Entity
-        TruckEntity truckEntity = new TruckEntity("string 1", "AA-123");
+        TruckEntity truckEntity = new TruckEntity(1, "string 1", "AA-123");
         //Turn Entity into DTO
         Truck truck = TruckMapper.INSTANCE.entityToDto(truckEntity);
 

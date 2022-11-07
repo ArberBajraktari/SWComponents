@@ -1,6 +1,6 @@
 package mapper;
 
-import at.fhtw.swen3.persistence.entity.ErrorEntity;
+import at.fhtw.swen3.persistence.entities.ErrorEntity;
 import at.fhtw.swen3.services.dto.Error;
 import at.fhtw.swen3.services.mapper.ErrorMapper;
 import org.junit.jupiter.api.Test;
@@ -11,7 +11,7 @@ public class ErrorMapperTest {
     @Test
     void entityToDto() {
         //Create Entity
-        ErrorEntity errorEntity = new ErrorEntity("Error djali");
+        ErrorEntity errorEntity = new ErrorEntity(1, "Error djali");
         //Turn Entity into DTO
         Error error = ErrorMapper.INSTANCE.entityToDto(errorEntity);
 

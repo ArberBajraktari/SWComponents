@@ -1,6 +1,6 @@
 package mapper;
 
-import at.fhtw.swen3.persistence.entity.TransferwarehouseEntity;
+import at.fhtw.swen3.persistence.entities.TransferwarehouseEntity;
 import at.fhtw.swen3.services.dto.Transferwarehouse;
 import at.fhtw.swen3.services.mapper.TransferwarehouseMapper;
 import org.junit.jupiter.api.Test;
@@ -12,7 +12,7 @@ public class TransferwarehouseMapperTest {
     @Test
     void entityToDto() {
         //Create TransferWarehouse Entity
-        TransferwarehouseEntity transferwarehouseEntity = new TransferwarehouseEntity("string1", "string2", "string3");
+        TransferwarehouseEntity transferwarehouseEntity = new TransferwarehouseEntity(1, "string1", "string2", "string3");
         //Turn Entity into DTO
         Transferwarehouse transferwarehouse = TransferwarehouseMapper.INSTANCE.entityToDto(transferwarehouseEntity);
 

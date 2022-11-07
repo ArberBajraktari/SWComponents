@@ -1,7 +1,7 @@
 package entity;
 
-import at.fhtw.swen3.persistence.entity.HopArrivalEntity;
-import at.fhtw.swen3.persistence.entity.RecipientEntity;
+import at.fhtw.swen3.persistence.entities.HopArrivalEntity;
+import at.fhtw.swen3.persistence.entities.RecipientEntity;
 import at.fhtw.swen3.services.dto.Recipient;
 import at.fhtw.swen3.services.mapper.RecipientMapper;
 import org.junit.jupiter.api.Test;
@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.fail;
 
 public class HopArrivalEntityTest {
     private static final Logger log = LoggerFactory.getLogger(RecipientEntityTest.class);
-    final RecipientEntity recipientEntity = new RecipientEntity("Mreti", "Dobrac 12/12",
+    final RecipientEntity recipientEntity = new RecipientEntity(1, "Mreti", "Dobrac 12/12",
             "1010", "Vienna", "Austria");
     Recipient recipient = RecipientMapper.INSTANCE.entityToDto(recipientEntity);
 
@@ -26,7 +26,7 @@ public class HopArrivalEntityTest {
     @Test
     public void validationTest_Ok(){
         log.info("Test HopArrivalEntity");
-        final HopArrivalEntity hopArrivalEntity = new HopArrivalEntity("ABCD123", "Description", null);
+        final HopArrivalEntity hopArrivalEntity = new HopArrivalEntity(1, "ABCD123", "Description", null);
 
         ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
         Validator validator = factory.getValidator();
@@ -42,7 +42,7 @@ public class HopArrivalEntityTest {
     @Test
     public void validationTest_NotOk(){
         log.info("Test HopArrivalEntity");
-        final HopArrivalEntity hopArrivalEntity = new HopArrivalEntity("Abcd123", "Description", null);
+        final HopArrivalEntity hopArrivalEntity = new HopArrivalEntity(1, "Abcd123", "Description", null);
 
         ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
         Validator validator = factory.getValidator();

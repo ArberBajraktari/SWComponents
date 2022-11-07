@@ -1,4 +1,4 @@
-package at.fhtw.swen3.persistence.entity;
+package at.fhtw.swen3.persistence.entities;
 
 
 import lombok.AllArgsConstructor;
@@ -14,13 +14,14 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Entity
 @Table
-public class TruckEntity {
+public class TransferwarehouseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "truck_id")
+    @Column(name = "transfer_wh_id")
     private Integer id;
 
     private String regionGeoJson;
-    private String numberPlate;
+    private String logisticsPartner;
+    private String logisticsPartnerUrl;
 }
