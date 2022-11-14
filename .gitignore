@@ -45,3 +45,4 @@ buildNumber.properties
 hs_err_pid*
 replay_pid*
 .idea/workspace.xml
+postgres-data
