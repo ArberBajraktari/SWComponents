@@ -31,11 +31,11 @@ public class TrackingInformationMapperTest {
         //Create TrackingInfo Entity
         ParcelEntity parcelEntity = new ParcelEntity(1, 10.0f, recipientEntity, senderEntity, "Pickup", "abcd12345");
         //Turn Entity into DTO
-        //TrackingInformation trackingInformation = TrackingInformationMapper.INSTANCE.entityToDto(parcelEntity);
+//        TrackingInformation trackingInformation = TrackingInformationMapper.INSTANCE.entityToDto(parcelEntity);
 
         //System.out.println(trackingInformation.getState());
         //Assert Equals
-        //assertEquals(TrackingInformation.StateEnum.PICKUP, trackingInformation.getState());
+//        assertEquals(TrackingInformation.StateEnum.PICKUP, trackingInformation.getState());
     }
 
     @Test

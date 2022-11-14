@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef4560f1-30ba-481f-8ea8-0ac60e7ae3fa" name="Changes" comment="" />
+    <list default="true" id="ef4560f1-30ba-481f-8ea8-0ac60e7ae3fa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/OpenApiGeneratorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/OpenApiGeneratorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/mapper/TrackingInformationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhtw/swen3/services/mapper/TrackingInformationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/entities/HopArrivalEntityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/entities/HopArrivalEntityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/entities/ParcelEntityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/entities/ParcelEntityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/entities/RecipientEntityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/entities/RecipientEntityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mapper/TrackingInformationMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapper/TrackingInformationMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TrackingInformationMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/at/fhtw/swen3/services/mapper/TrackingInformationMapperImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,43 +63,11 @@
       <recent name="at.fhtw.swen3.services.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ParcelRepositoryTest.validationTest_Ok">
+  <component name="RunManager" selected="Spring Boot.OpenApiGeneratorApplication (3)">
     <configuration name="All in openapi-spring" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="openapi-spring" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ErrorMapperTest.entityToDto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="openapi-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mapper" />
-      <option name="MAIN_CLASS_NAME" value="mapper.ErrorMapperTest" />
-      <option name="METHOD_NAME" value="entityToDto" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HopMapperTest.entityToDto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="openapi-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mapper" />
-      <option name="MAIN_CLASS_NAME" value="mapper.HopMapperTest" />
-      <option name="METHOD_NAME" value="entityToDto" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -111,8 +88,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mapper in openapi-spring" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="openapi-spring" />
+    <configuration name="TrackingInformationMapperTest.dtoToEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="swagger-spring" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="mapper.*" />
@@ -120,7 +97,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="mapper" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="mapper.TrackingInformationMapperTest" />
+      <option name="METHOD_NAME" value="dtoToEntity" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrackingInformationMapperTest.entityToDto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="swagger-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mapper" />
+      <option name="MAIN_CLASS_NAME" value="mapper.TrackingInformationMapperTest" />
+      <option name="METHOD_NAME" value="entityToDto" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,6 +129,19 @@
     </configuration>
     <configuration name="OpenApiGeneratorApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="openapi-spring" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="at.fhtw.swen3.OpenApiGeneratorApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OpenApiGeneratorApplication (3)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="swagger-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fhtw.swen3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="at.fhtw.swen3.OpenApiGeneratorApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.OpenApiGeneratorApplication (3)" />
+        <item itemvalue="JUnit.TrackingInformationMapperTest.entityToDto" />
+        <item itemvalue="JUnit.TrackingInformationMapperTest.dtoToEntity" />
         <item itemvalue="JUnit.ParcelRepositoryTest.validationTest_Ok" />
         <item itemvalue="JUnit.All in openapi-spring" />
-        <item itemvalue="JUnit.mapper in openapi-spring" />
-        <item itemvalue="JUnit.ErrorMapperTest.entityToDto" />
-        <item itemvalue="JUnit.HopMapperTest.entityToDto" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +193,7 @@
       <workItem from="1667816945205" duration="3521000" />
       <workItem from="1668180547267" duration="1297000" />
       <workItem from="1668181944569" duration="3587000" />
-      <workItem from="1668421778475" duration="512000" />
+      <workItem from="1668421778475" duration="1547000" />
     </task>
     <servers />
   </component>

@@ -32,6 +32,7 @@ public class ParcelServiceImpl implements ParcelService {
     @Override
     public void submitNewParcel(ParcelEntity newParcel) {
         parcelRepo.save(newParcel);
+        log.info("New Parcel Entry");
     }
 
     @Override

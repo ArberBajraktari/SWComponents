@@ -4,6 +4,7 @@ import at.fhtw.swen3.persistence.entities.HopArrivalEntity;
 import at.fhtw.swen3.persistence.entities.RecipientEntity;
 import at.fhtw.swen3.services.dto.Recipient;
 import at.fhtw.swen3.services.mapper.RecipientMapper;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,8 +17,8 @@ import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.fail;
 
+@Slf4j
 public class HopArrivalEntityTest {
-    private static final Logger log = LoggerFactory.getLogger(RecipientEntityTest.class);
     final RecipientEntity recipientEntity = new RecipientEntity(1, "Mreti", "Dobrac 12/12",
             "1010", "Vienna", "Austria");
     Recipient recipient = RecipientMapper.INSTANCE.entityToDto(recipientEntity);

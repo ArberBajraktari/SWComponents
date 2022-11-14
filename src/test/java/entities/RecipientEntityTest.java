@@ -1,6 +1,7 @@
 package entities;
 
 import at.fhtw.swen3.persistence.entities.RecipientEntity;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,8 +14,8 @@ import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@Slf4j
 class RecipientEntityTest {
-    private static final Logger log = LoggerFactory.getLogger(RecipientEntityTest.class);
 
     @Test
     public void validationTest_Ok(){
