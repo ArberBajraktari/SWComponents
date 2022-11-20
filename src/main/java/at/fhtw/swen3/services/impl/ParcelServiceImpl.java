@@ -4,6 +4,7 @@ import at.fhtw.swen3.persistence.entities.ParcelEntity;
 import at.fhtw.swen3.persistence.repositories.ParcelRepository;
 import at.fhtw.swen3.persistence.repositories.RecipientRepository;
 import at.fhtw.swen3.services.ParcelService;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -14,18 +15,18 @@ import org.springframework.transaction.annotation.Transactional;
 @Slf4j
 public class ParcelServiceImpl implements ParcelService {
 
-    ParcelRepository parcelRepo;
-    RecipientRepository recipientRepo;
+    final ParcelRepository parcelRepo;
+
+    final RecipientRepository recipientRepo;
 
     @Autowired
-    ParcelServiceImpl (ParcelRepository parcelRepo, RecipientRepository recipientRepo){
+    public ParcelServiceImpl(ParcelRepository parcelRepo, RecipientRepository recipientRepo){
         this.parcelRepo = parcelRepo;
         this.recipientRepo = recipientRepo;
     }
-
     @Override
     public void submitNewParcel(ParcelEntity newParcel) {
-        parcelRepo.save(newParcel);
+//        parcelRepo.save(newParcel);
         log.info("New Parcel Entry");
     }
 
@@ -33,6 +34,5 @@ public class ParcelServiceImpl implements ParcelService {
     public ParcelEntity getTrackingInformation(String trackingId) {
         return null;
     }
-
 
 }

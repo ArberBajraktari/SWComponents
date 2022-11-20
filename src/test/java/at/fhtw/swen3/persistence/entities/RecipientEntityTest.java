@@ -1,10 +1,11 @@
-package entities;
+package at.fhtw.swen3.persistence.entities;
 
 import at.fhtw.swen3.persistence.entities.RecipientEntity;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.Validation;
@@ -15,6 +16,7 @@ import java.util.Set;
 import static org.junit.jupiter.api.Assertions.*;
 
 @Slf4j
+@SpringBootTest
 class RecipientEntityTest {
 
     @Test
