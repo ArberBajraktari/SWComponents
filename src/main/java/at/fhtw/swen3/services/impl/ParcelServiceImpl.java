@@ -12,7 +12,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @Slf4j
-@EnableAutoConfiguration
 public class ParcelServiceImpl implements ParcelService {
 
     ParcelRepository parcelRepo;

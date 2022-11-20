@@ -15,17 +15,17 @@ import static org.junit.jupiter.api.Assertions.*;
 class ParcelRepositoryTest {
 
 
-    @Autowired
-    private ParcelRepository repo;
-
 //    @Autowired
-//    private ParcelServiceImpl parcelServiceImpl;
-
-    @Test
-    public void validationTest_Ok() {
-        ParcelEntity parcel = new ParcelEntity();
-        parcel.setWeight(10.0f);
-        repo.save(parcel);
-        //parcelServiceImpl.submitNewParcel(parcel);
-    }
+//    private ParcelRepository repo;
+//
+////    @Autowired
+////    private ParcelServiceImpl parcelServiceImpl;
+//
+//    @Test
+//    public void validationTest_Ok() {
+//        ParcelEntity parcel = new ParcelEntity();
+//        parcel.setWeight(10.0f);
+//        repo.save(parcel);
+//        //parcelServiceImpl.submitNewParcel(parcel);
+//    }
 }
