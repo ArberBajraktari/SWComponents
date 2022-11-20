@@ -21,4 +21,8 @@ Change default port value in application.properties
 curl -X POST "http://localhost:8080/parcel" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"recipient\":{\"city\":\"string\",\"country\":\"string\",\"name\":\"string\",\"postalCode\":\"string\",\"street\":\"string\"},\"sender\":{\"city\":\"string\",\"country\":\"string\",\"name\":\"string\",\"postalCode\":\"string\",\"street\":\"string\"},\"weight\":0}"
 
 ## Docker command for Postgres (postgis included)
+### For Mac
 docker run --name some-postgis -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -v $PWD/postgres-data:/var/lib/postgresql/data -d postgis/postgis
+
+### For Windows
+to-add
