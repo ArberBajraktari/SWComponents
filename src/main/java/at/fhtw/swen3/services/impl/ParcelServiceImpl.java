@@ -23,11 +23,6 @@ public class ParcelServiceImpl implements ParcelService {
         this.recipientRepo = recipientRepo;
     }
 
-    //public ParcelServiceImpl(ParcelRepository parcelRepo, RecipientRepository recipientRepo){
-      //  this.parcelRepo = parcelRepo;
-        //this.recipientRepo = recipientRepo;
-    //}
-
     @Override
     public void submitNewParcel(ParcelEntity newParcel) {
         parcelRepo.save(newParcel);

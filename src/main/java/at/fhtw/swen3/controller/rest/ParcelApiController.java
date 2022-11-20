@@ -12,14 +12,11 @@ import javax.annotation.Generated;
 @Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2022-10-05T17:11:31.855527Z[Etc/UTC]")
 @Controller
 public class ParcelApiController implements ParcelApi {
-
     private final NativeWebRequest request;
-
     @Autowired
     public ParcelApiController(NativeWebRequest request) {
         this.request = request;
     }
-
     @Override
     public Optional<NativeWebRequest> getRequest() {
         return Optional.ofNullable(request);
