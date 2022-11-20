@@ -10,6 +10,8 @@ public interface ParcelService {
 
     void submitNewParcel(ParcelEntity newParcel);
 
+    void getEntityWithId(int id);
+
     public ParcelEntity getTrackingInformation(String trackingId);
 
 
