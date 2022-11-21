@@ -18,7 +18,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories("at.fhtw.swen3.persistence.repositories")
 @EntityScan
 @Slf4j
-@ComponentScan(basePackages = {"org.openapitools", "at.fhtw.swen3.services" , "at.fhtw.swen3.configuration"})
+@ComponentScan(basePackages = {"org.openapitools", "at.fhtw.swen3.controller.rest" , "at.fhtw.swen3.configuration"})
 public class OpenApiGeneratorApplication {
     public static void main(String[] args) {
         SpringApplication.run(OpenApiGeneratorApplication.class, args);
