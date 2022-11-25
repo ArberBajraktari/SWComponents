@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 @Repository
-@EnableAutoConfiguration
 public interface ParcelRepository extends JpaRepository<ParcelEntity, Integer> {
 
     ParcelEntity findById(int id);
