@@ -34,6 +34,7 @@ import javax.annotation.Generated;
 @RequestMapping("${openapi.parcelLogisticsService.base-path:}")
 public interface ParcelApi {
 
+
     default Optional<NativeWebRequest> getRequest() {
         return Optional.empty();
     }
@@ -105,6 +106,9 @@ public interface ParcelApi {
 
     }
 
+    String addParcel(Parcel parcel);
+
+    String getParcel(String trackingId);
 
     /**
      * POST /parcel : Submit a new parcel to the logistics service. 
@@ -142,8 +146,8 @@ public interface ParcelApi {
         getRequest().ifPresent(request -> {
             for (MediaType mediaType: MediaType.parseMediaTypes(request.getHeader("Accept"))) {
                 if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
-                    String exampleString = "{ \"trackingId\" : \"PYJRB4HZ6\" }";
-                    ApiUtil.setExampleResponse(request, "application/json", exampleString);
+                    String response = addParcel(parcel);
+                    ApiUtil.setExampleResponse(request, "application/json", response);
                     break;
                 }
             }
@@ -186,8 +190,9 @@ public interface ParcelApi {
         getRequest().ifPresent(request -> {
             for (MediaType mediaType: MediaType.parseMediaTypes(request.getHeader("Accept"))) {
                 if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
+                    String response = getParcel(trackingId);
                     String exampleString = "{ \"visitedHops\" : [ { \"dateTime\" : \"2000-01-23T04:56:07.000+00:00\", \"code\" : \"code\", \"description\" : \"description\" }, { \"dateTime\" : \"2000-01-23T04:56:07.000+00:00\", \"code\" : \"code\", \"description\" : \"description\" } ], \"futureHops\" : [ { \"dateTime\" : \"2000-01-23T04:56:07.000+00:00\", \"code\" : \"code\", \"description\" : \"description\" }, { \"dateTime\" : \"2000-01-23T04:56:07.000+00:00\", \"code\" : \"code\", \"description\" : \"description\" } ], \"state\" : \"Pickup\" }";
-                    ApiUtil.setExampleResponse(request, "application/json", exampleString);
+                    ApiUtil.setExampleResponse(request, "application/json", response);
                     break;
                 }
             }
@@ -195,6 +200,8 @@ public interface ParcelApi {
         return new ResponseEntity<>(HttpStatus.NOT_IMPLEMENTED);
 
     }
+
+
 
 
     /**

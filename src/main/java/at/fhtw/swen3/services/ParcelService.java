@@ -8,11 +8,12 @@ import org.springframework.stereotype.Service;
 @Service
 public interface ParcelService {
 
-    void submitNewParcel(ParcelEntity newParcel);
+    String submitNewParcel(ParcelEntity newParcel);
 
     void getEntityWithId(int id);
 
     public ParcelEntity getTrackingInformation(String trackingId);
 
+    ParcelEntity getEntityByTrackingId(String trackingId);
 
 }

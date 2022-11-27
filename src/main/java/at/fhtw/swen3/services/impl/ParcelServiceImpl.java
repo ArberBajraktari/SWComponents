@@ -6,6 +6,7 @@ import at.fhtw.swen3.persistence.repositories.RecipientRepository;
 import at.fhtw.swen3.services.ParcelService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -13,14 +14,17 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class ParcelServiceImpl implements ParcelService {
 
+    @Autowired
     final ParcelRepository parcelRepo;
 
+    @Autowired
     final RecipientRepository recipientRepo;
 
     @Override
-    public void submitNewParcel(ParcelEntity newParcel) {
-//        parcelRepo.save(newParcel);
-        log.info("New Parcel Entry");
+    public String submitNewParcel(ParcelEntity parcelEntity) {
+
+        ParcelEntity parcelEntity1 = parcelRepo.findById(1);
+        return parcelEntity1.getTrackingId();
     }
 
     @Override
@@ -32,6 +36,11 @@ public class ParcelServiceImpl implements ParcelService {
     @Override
     public ParcelEntity getTrackingInformation(String trackingId) {
         return null;
+    }
+
+    @Override
+    public ParcelEntity getEntityByTrackingId(String trackingId) {
+        return this.parcelRepo.findByTrackingId(trackingId);
     }
 
 }
