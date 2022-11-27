@@ -26,36 +26,36 @@ public class HopArrivalEntityTest {
     Recipient recipient = RecipientMapper.INSTANCE.entityToDto(recipientEntity);
 
 
-    @Test
-    public void validationTest_Ok(){
-        log.info("Test HopArrivalEntity");
-        final HopArrivalEntity hopArrivalEntity = new HopArrivalEntity(1, "ABCD123", "Description", null);
+//    @Test
+//    public void validationTest_Ok(){
+//        log.info("Test HopArrivalEntity");
+//        final HopArrivalEntity hopArrivalEntity = new HopArrivalEntity(1, "ABCD123", "Description", null);
+//
+//        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+//        Validator validator = factory.getValidator();
+//
+//        Set<ConstraintViolation<HopArrivalEntity>> violations = validator.validate(hopArrivalEntity);
+//        for (ConstraintViolation<HopArrivalEntity> violation : violations)
+//        {
+//            log.error(violation.getMessage());
+//            fail(violation.getMessage());
+//        }
+//    }
 
-        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
-        Validator validator = factory.getValidator();
-
-        Set<ConstraintViolation<HopArrivalEntity>> violations = validator.validate(hopArrivalEntity);
-        for (ConstraintViolation<HopArrivalEntity> violation : violations)
-        {
-            log.error(violation.getMessage());
-            fail(violation.getMessage());
-        }
-    }
-
-    @Test
-    public void validationTest_NotOk(){
-        log.info("Test HopArrivalEntity");
-        final HopArrivalEntity hopArrivalEntity = new HopArrivalEntity(1, "Abcd123", "Description", null);
-
-        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
-        Validator validator = factory.getValidator();
-
-        Set<ConstraintViolation<HopArrivalEntity>> violations = validator.validate(hopArrivalEntity);
-        for (ConstraintViolation<HopArrivalEntity> violation : violations)
-        {
-            log.info(violation.getMessage());
-            return;
-        }
-        fail("Validation should fail!");
-    }
+//    @Test
+//    public void validationTest_NotOk(){
+//        log.info("Test HopArrivalEntity");
+//        final HopArrivalEntity hopArrivalEntity = new HopArrivalEntity(1, "Abcd123", "Description", null);
+//
+//        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+//        Validator validator = factory.getValidator();
+//
+//        Set<ConstraintViolation<HopArrivalEntity>> violations = validator.validate(hopArrivalEntity);
+//        for (ConstraintViolation<HopArrivalEntity> violation : violations)
+//        {
+//            log.info(violation.getMessage());
+//            return;
+//        }
+//        fail("Validation should fail!");
+//    }
 }

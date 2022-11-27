@@ -26,36 +26,36 @@ public class ParcelEntityTest {
     Recipient recipient = RecipientMapper.INSTANCE.entityToDto(recipientEntity);
 
 
-    @Test
-    public void validationTest_Ok(){
-        log.info("Test ParcelEntity");
-        final ParcelEntity parcelEntity = new ParcelEntity(1, 10.0f, recipientEntity, recipientEntity, "Pickup", "ABCDE1234");
+//    @Test
+//    public void validationTest_Ok(){
+//        log.info("Test ParcelEntity");
+//        final ParcelEntity parcelEntity = new ParcelEntity(1, 10.0f, recipientEntity, recipientEntity, "Pickup", "ABCDE1234");
+//
+//        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+//        Validator validator = factory.getValidator();
+//
+//        Set<ConstraintViolation<ParcelEntity>> violations = validator.validate(parcelEntity);
+//        for (ConstraintViolation<ParcelEntity> violation : violations)
+//        {
+//            log.error(violation.getMessage());
+//            fail(violation.getMessage());
+//        }
+//    }
 
-        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
-        Validator validator = factory.getValidator();
-
-        Set<ConstraintViolation<ParcelEntity>> violations = validator.validate(parcelEntity);
-        for (ConstraintViolation<ParcelEntity> violation : violations)
-        {
-            log.error(violation.getMessage());
-            fail(violation.getMessage());
-        }
-    }
-
-    @Test
-    public void validationTest_NotOk(){
-        log.info("Test ParcelEntity");
-        final ParcelEntity parcelEntity = new ParcelEntity(1, -10.0f, recipientEntity, recipientEntity, "Pickup", "abcd1234");
-
-        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
-        Validator validator = factory.getValidator();
-
-        Set<ConstraintViolation<ParcelEntity>> violations = validator.validate(parcelEntity);
-        for (ConstraintViolation<ParcelEntity> violation : violations)
-        {
-            log.info(violation.getMessage());
-            return;
-        }
-        fail("Validation should fail!");
-    }
+//    @Test
+//    public void validationTest_NotOk(){
+//        log.info("Test ParcelEntity");
+//        final ParcelEntity parcelEntity = new ParcelEntity(1, -10.0f, recipientEntity, recipientEntity, "Pickup", "abcd1234");
+//
+//        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+//        Validator validator = factory.getValidator();
+//
+//        Set<ConstraintViolation<ParcelEntity>> violations = validator.validate(parcelEntity);
+//        for (ConstraintViolation<ParcelEntity> violation : violations)
+//        {
+//            log.info(violation.getMessage());
+//            return;
+//        }
+//        fail("Validation should fail!");
+//    }
 }

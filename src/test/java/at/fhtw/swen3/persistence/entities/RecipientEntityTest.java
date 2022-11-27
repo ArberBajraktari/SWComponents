@@ -19,40 +19,40 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class RecipientEntityTest {
 
-    @Test
-    public void validationTest_Ok(){
-        log.info("Test validationTest");
+//    @Test
+//    public void validationTest_Ok(){
+//        log.info("Test validationTest");
+//
+//        final RecipientEntity recipientEntity = new RecipientEntity(1, "Mreti", "Dobrac 12/12",
+//                "1010", "Vienna", "Austria");
+//
+//        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+//        Validator validator = factory.getValidator();
+//
+//        Set<ConstraintViolation<RecipientEntity>> violations = validator.validate(recipientEntity);
+//        for (ConstraintViolation<RecipientEntity> violation : violations)
+//        {
+//            log.error(violation.getMessage());
+//            fail(violation.getMessage());
+//        }
+//    }
 
-        final RecipientEntity recipientEntity = new RecipientEntity(1, "Mreti", "Dobrac 12/12",
-                "1010", "Vienna", "Austria");
-
-        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
-        Validator validator = factory.getValidator();
-
-        Set<ConstraintViolation<RecipientEntity>> violations = validator.validate(recipientEntity);
-        for (ConstraintViolation<RecipientEntity> violation : violations)
-        {
-            log.error(violation.getMessage());
-            fail(violation.getMessage());
-        }
-    }
-
-    @Test
-    public void validationTest_NotOk(){
-        log.info("Test validationTest");
-
-        final RecipientEntity recipientEntity = new RecipientEntity(1, "Mreti", "Dobrac",
-                "110", "vienna", "Austria");
-
-        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
-        Validator validator = factory.getValidator();
-
-        Set<ConstraintViolation<RecipientEntity>> violations = validator.validate(recipientEntity);
-        for (ConstraintViolation<RecipientEntity> violation : violations)
-        {
-            log.info(violation.getMessage());
-            return;
-        }
-        fail("Validation should fail!");
-    }
+//    @Test
+//    public void validationTest_NotOk(){
+//        log.info("Test validationTest");
+//
+//        final RecipientEntity recipientEntity = new RecipientEntity(1, "Mreti", "Dobrac",
+//                "110", "vienna", "Austria");
+//
+//        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+//        Validator validator = factory.getValidator();
+//
+//        Set<ConstraintViolation<RecipientEntity>> violations = validator.validate(recipientEntity);
+//        for (ConstraintViolation<RecipientEntity> violation : violations)
+//        {
+//            log.info(violation.getMessage());
+//            return;
+//        }
+//        fail("Validation should fail!");
+//    }
 }
