@@ -22,6 +22,7 @@ public class RecipientEntity {
     @Column(name = "recipient_id")
     private Integer id;
 
+
     @Pattern(regexp =  "^[A-Z][a-zA-Z-\\/ ßäöü]*")
     private String name;
     @Pattern(regexp = "^[a-zA-Z 0-9\\/ ßäöü]*")
@@ -31,4 +32,5 @@ public class RecipientEntity {
     @Pattern(regexp =  "^[A-Z][a-zA-Z-\\/ ßäöü]*")
     private String city;
     private String country;
+
 }

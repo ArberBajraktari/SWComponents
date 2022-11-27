@@ -34,12 +34,12 @@ public class ParcelEntity {
 
     @NotNull
     @JoinColumn(name = "recipient_id", referencedColumnName="recipient_id")
-    @ManyToOne
+    @OneToOne(cascade=CascadeType.ALL)
     private RecipientEntity recipient;
 
     @NotNull
     @JoinColumn(name="sender_id", referencedColumnName="recipient_id")
-    @ManyToOne
+    @OneToOne(cascade=CascadeType.ALL)
     private RecipientEntity sender;
 
     //TrackingInformation

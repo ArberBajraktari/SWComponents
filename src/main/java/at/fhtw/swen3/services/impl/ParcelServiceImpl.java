@@ -22,9 +22,13 @@ public class ParcelServiceImpl implements ParcelService {
 
     @Override
     public String submitNewParcel(ParcelEntity parcelEntity) {
-
-        ParcelEntity parcelEntity1 = parcelRepo.findById(1);
-        return parcelEntity1.getTrackingId();
+        try {
+            parcelRepo.saveAndFlush(parcelEntity);
+            return "Entity Submited";
+        } catch (Exception e) {
+            log.info(e.getMessage());
+            return "Error while submiting";
+        }
     }
 
     @Override
