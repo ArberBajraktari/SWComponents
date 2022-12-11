@@ -6,6 +6,7 @@
 package at.fhtw.swen3.controller;
 
 import at.fhtw.swen3.controller.ApiUtil;
+import at.fhtw.swen3.services.BLException;
 import at.fhtw.swen3.services.dto.Error;
 import at.fhtw.swen3.services.dto.NewParcelInfo;
 import at.fhtw.swen3.services.dto.Parcel;
@@ -106,7 +107,7 @@ public interface ParcelApi {
 
     }
 
-    String addParcel(Parcel parcel);
+    String addParcel(Parcel parcel) throws BLException;
 
     String getParcel(String trackingId);
 

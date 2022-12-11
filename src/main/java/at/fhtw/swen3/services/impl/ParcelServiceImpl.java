@@ -3,6 +3,7 @@ package at.fhtw.swen3.services.impl;
 import at.fhtw.swen3.persistence.entities.ParcelEntity;
 import at.fhtw.swen3.persistence.repositories.ParcelRepository;
 import at.fhtw.swen3.persistence.repositories.RecipientRepository;
+import at.fhtw.swen3.services.BLException;
 import at.fhtw.swen3.services.ParcelService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -12,7 +13,7 @@ import org.springframework.stereotype.Service;
 @Service
 @Slf4j
 @RequiredArgsConstructor
-public class ParcelServiceImpl implements ParcelService {
+public class ParcelServiceImpl implements ParcelService{
 
     @Autowired
     final ParcelRepository parcelRepo;
@@ -21,13 +22,13 @@ public class ParcelServiceImpl implements ParcelService {
     final RecipientRepository recipientRepo;
 
     @Override
-    public String submitNewParcel(ParcelEntity parcelEntity) {
+    public String submitNewParcel(ParcelEntity parcelEntity) throws BLException {
         try {
             parcelRepo.saveAndFlush(parcelEntity);
             return "Entity Submited";
         } catch (Exception e) {
-            log.info(e.getMessage());
-            return "Error while submiting";
+
+            throw new BLException(e, "Failed to submit New Parcel");
         }
     }
 

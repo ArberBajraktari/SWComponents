@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 public interface ParcelService {
 
-    String submitNewParcel(ParcelEntity newParcel);
+    String submitNewParcel(ParcelEntity newParcel) throws BLException;
 
     void getEntityWithId(int id);
 
