@@ -27,7 +27,6 @@ public class ParcelServiceImpl implements ParcelService{
             parcelRepo.saveAndFlush(parcelEntity);
             return "Entity Submited";
         } catch (Exception e) {
-
             throw new BLException(e, "Failed to submit New Parcel");
         }
     }
@@ -35,7 +34,7 @@ public class ParcelServiceImpl implements ParcelService{
     @Override
     public void getEntityWithId(int id) {
         parcelRepo.findById(id);
-        log.info("Finding PArcel via ID");
+        log.info("Finding Parcel via ID");
     }
 
     @Override

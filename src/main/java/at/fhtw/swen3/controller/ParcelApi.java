@@ -107,7 +107,7 @@ public interface ParcelApi {
 
     }
 
-    String addParcel(Parcel parcel) throws BLException;
+    String addParcel(Parcel parcel);
 
     String getParcel(String trackingId);
 

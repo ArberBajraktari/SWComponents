@@ -17,6 +17,7 @@ public class AppConfig {
         return new ParcelServiceImpl(parcelRepository, recipientRepository);
 
     }
+
     @Bean
     public WarehouseServiceImpl warehouseService(WarehouseRepository warehouseRepository){
         return new WarehouseServiceImpl(warehouseRepository);
