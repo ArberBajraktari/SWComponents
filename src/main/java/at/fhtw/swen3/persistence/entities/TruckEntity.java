@@ -14,7 +14,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Entity
 @Table
-public class TruckEntity extends HopEntity{
+public class TruckEntity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
