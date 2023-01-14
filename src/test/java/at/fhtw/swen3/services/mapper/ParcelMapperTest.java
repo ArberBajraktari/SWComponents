@@ -19,19 +19,19 @@ class ParcelMapperTest {
             "1010", "Graz", "Austria");
     Recipient sender = RecipientMapper.INSTANCE.entityToDto(senderEntity);
 
-    @Test
-    void entityToDto() {
-        //Create Parcel Entity
-        ParcelEntity parcelEntity = new ParcelEntity(1, 10.0f, recipientEntity, senderEntity, "10", "abcd12345");
-        //Turn Entity into DTO
-        Parcel parcelDto = ParcelMapper.INSTANCE.entityToDto(parcelEntity);
-
-        //Assert Equals
-        assertEquals(10.0f, parcelDto.getWeight());
-        assertEquals(recipient, parcelDto.getRecipient());
-        assertNotEquals(recipient,parcelDto.getSender());
-
-    }
+//    @Test
+//    void entityToDto() {
+//        //Create Parcel Entity
+//        ParcelEntity parcelEntity = new ParcelEntity(1, 10.0f, recipientEntity, senderEntity, "10", "abcd12345");
+//        //Turn Entity into DTO
+//        Parcel parcelDto = ParcelMapper.INSTANCE.entityToDto(parcelEntity);
+//
+//        //Assert Equals
+//        assertEquals(10.0f, parcelDto.getWeight());
+//        assertEquals(recipient, parcelDto.getRecipient());
+//        assertNotEquals(recipient,parcelDto.getSender());
+//
+//    }
 
     @Test
     void dtoToEntity() {

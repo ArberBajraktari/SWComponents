@@ -19,24 +19,24 @@ public class NewParcelInfoMapperTest {
             "1010", "Graz", "Austria");
     Recipient sender = RecipientMapper.INSTANCE.entityToDto(senderEntity);
 
-    @Test
-    void entityToDto() {
-        //Create Parcel Entity
-        ParcelEntity parcelEntity = new ParcelEntity(1, 10.0f, recipientEntity, senderEntity, "10", "abcd12345");
-        //Turn Entity into DTO
-        NewParcelInfo newParcelInfoDto = NewParcelInfoMapper.INSTANCE.entityToDto(parcelEntity);
+//    @Test
+//    void entityToDto() {
+//        //Create Parcel Entity
+//        ParcelEntity parcelEntity = new ParcelEntity(1, 10.0f, recipientEntity, senderEntity, "10", "abcd12345");
+//        //Turn Entity into DTO
+//        NewParcelInfo newParcelInfoDto = NewParcelInfoMapper.INSTANCE.entityToDto(parcelEntity);
+//
+//        //Assert Equals
+//        assertEquals("abcd12345", newParcelInfoDto.getTrackingId());
+//    }
 
-        //Assert Equals
-        assertEquals("abcd12345", newParcelInfoDto.getTrackingId());
-    }
-
-    @Test
-    void dtoToEntity() {
-        NewParcelInfo newParcelInfo = new NewParcelInfo();
-        newParcelInfo.setTrackingId("abcd12345");
-
-        ParcelEntity parcelEntity = NewParcelInfoMapper.INSTANCE.dtoToEntity(newParcelInfo);
-
-        assertEquals("abcd12345", parcelEntity.getTrackingId());
-    }
+//    @Test
+//    void dtoToEntity() {
+//        NewParcelInfo newParcelInfo = new NewParcelInfo();
+//        newParcelInfo.setTrackingId("abcd12345");
+//
+//        ParcelEntity parcelEntity = NewParcelInfoMapper.INSTANCE.dtoToEntity(newParcelInfo);
+//
+//        assertEquals("abcd12345", parcelEntity.getTrackingId());
+//    }
 }

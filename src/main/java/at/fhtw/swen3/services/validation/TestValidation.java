@@ -17,7 +17,6 @@ public class TestValidation<T> {
         for (ConstraintViolation<T> violation : violations)
         {
             log.error(violation.getMessage());
-//            fail(violation.getMessage());
             if(!violations.isEmpty()){
                 throw new ConstraintViolationException(violations);
             }

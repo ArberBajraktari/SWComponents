@@ -2,6 +2,7 @@ package at.fhtw.swen3.persistence.entities;
 
 
 import at.fhtw.swen3.services.dto.HopArrival;
+import at.fhtw.swen3.services.dto.TrackingInformation;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
@@ -44,6 +45,9 @@ public class ParcelEntity {
 
     //TrackingInformation
     private String value;
+//    private TrackingInformation.StateEnum state;
+//    private List<HopArrival> visitedHops = new ArrayList<>();
+//    private List<HopArrival> futureHops = new ArrayList<>();
 
     //NewParcelInfo
     @Pattern(regexp = "^[A-Z0-9]{9}$")
