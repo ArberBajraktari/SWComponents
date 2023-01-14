@@ -17,7 +17,7 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @Table
-public class WarehouseEntity extends HopEntity {
+public class WarehouseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
