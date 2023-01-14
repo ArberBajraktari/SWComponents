@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.jupiter.api.Assertions.fail;
 
 @Slf4j
-@SpringBootTest
+//@SpringBootTest
 class HopEntityTest {
 
     @Test
