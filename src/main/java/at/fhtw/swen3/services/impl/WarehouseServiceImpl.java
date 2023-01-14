@@ -20,7 +20,8 @@ public class WarehouseServiceImpl implements WarehouseService {
     @Override
     public WarehouseEntity getWarehouseByCode(String code) throws BLException{
         try {
-            return warehouseRepo.findWarehouseEntityByCode(code);
+            return new WarehouseEntity();
+            //return warehouseRepo.findWarehouseEntityByCode(code);
         }catch (Exception e){
             throw new BLException(e, "Error finding warehouse by code");
         }

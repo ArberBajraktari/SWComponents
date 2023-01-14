@@ -1,6 +1,7 @@
 package at.fhtw.swen3.services.mapper;
 
 import at.fhtw.swen3.persistence.entities.HopEntity;
+import at.fhtw.swen3.persistence.entities.HopEntity.HopEntityBuilder;
 import at.fhtw.swen3.persistence.entities.WarehouseEntity;
 import at.fhtw.swen3.persistence.entities.WarehouseNextHopsEntity;
 import at.fhtw.swen3.services.dto.Hop;
@@ -12,7 +13,7 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-01-14T15:03:05+0100",
+    date = "2023-01-14T23:11:05+0100",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 19 (Oracle Corporation)"
 )
 public class WarehouseMapperImpl implements WarehouseMapper {
@@ -92,15 +93,15 @@ public class WarehouseMapperImpl implements WarehouseMapper {
             return null;
         }
 
-        HopEntity hopEntity = new HopEntity();
+        HopEntityBuilder hopEntity = HopEntity.builder();
 
-        hopEntity.setHopType( hop.getHopType() );
-        hopEntity.setCode( hop.getCode() );
-        hopEntity.setDescription( hop.getDescription() );
-        hopEntity.setProcessingDelayMins( hop.getProcessingDelayMins() );
-        hopEntity.setLocationName( hop.getLocationName() );
+        hopEntity.hopType( hop.getHopType() );
+        hopEntity.code( hop.getCode() );
+        hopEntity.description( hop.getDescription() );
+        hopEntity.processingDelayMins( hop.getProcessingDelayMins() );
+        hopEntity.locationName( hop.getLocationName() );
 
-        return hopEntity;
+        return hopEntity.build();
     }
 
     protected WarehouseNextHopsEntity warehouseNextHopsToWarehouseNextHopsEntity(WarehouseNextHops warehouseNextHops) {
