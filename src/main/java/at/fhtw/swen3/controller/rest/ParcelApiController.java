@@ -34,16 +34,16 @@ public class ParcelApiController implements ParcelApi {
         return Optional.ofNullable(request);
     }
 
-    @Override
-    public String addParcel(Parcel parcel) throws BLException {
-        ParcelEntity parcelEntity = ParcelMapperImpl.INSTANCE.dtoToEntity(parcel);
-        return this.parcelServiceImpl.submitNewParcel(parcelEntity);
-    }
-
-    @Override
-    public String getParcel(String trackingId) {
-        ParcelEntity parcelEntity = this.parcelServiceImpl.getEntityByTrackingId(trackingId);
-        return parcelEntity.getValue();
-    }
+//    @Override
+//    public String addParcel(Parcel parcel) throws BLException {
+//        ParcelEntity parcelEntity = ParcelMapperImpl.INSTANCE.dtoToEntity(parcel);
+//        return this.parcelServiceImpl.submitNewParcel(parcelEntity);
+//    }
+//
+//    @Override
+//    public String getParcel(String trackingId) {
+//        ParcelEntity parcelEntity = this.parcelServiceImpl.getEntityByTrackingId(trackingId);
+//        return parcelEntity.getValue();
+//    }
 
 }
