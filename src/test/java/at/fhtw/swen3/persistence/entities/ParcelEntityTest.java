@@ -4,6 +4,7 @@ import at.fhtw.swen3.persistence.entities.RecipientEntity;
 import at.fhtw.swen3.persistence.entities.ParcelEntity;
 import at.fhtw.swen3.services.dto.Recipient;
 import at.fhtw.swen3.services.mapper.RecipientMapper;
+import at.fhtw.swen3.services.validation.TestValidation;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
@@ -26,36 +27,24 @@ public class ParcelEntityTest {
     Recipient recipient = RecipientMapper.INSTANCE.entityToDto(recipientEntity);
 
 
-//    @Test
-//    public void validationTest_Ok(){
-//        log.info("Test ParcelEntity");
-//        final ParcelEntity parcelEntity = new ParcelEntity(1, 10.0f, recipientEntity, recipientEntity, "Pickup", "ABCDE1234");
-//
-//        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
-//        Validator validator = factory.getValidator();
-//
-//        Set<ConstraintViolation<ParcelEntity>> violations = validator.validate(parcelEntity);
-//        for (ConstraintViolation<ParcelEntity> violation : violations)
-//        {
-//            log.error(violation.getMessage());
-//            fail(violation.getMessage());
-//        }
-//    }
+    @Test
+    public void parcelEntityTestValid(){
+        log.info("Test ParcelEntity");
+        final ParcelEntity parcelEntity = new ParcelEntity(1, 10.0f, recipientEntity, recipientEntity, "Pickup", "ABCDE1234");
 
-//    @Test
-//    public void validationTest_NotOk(){
-//        log.info("Test ParcelEntity");
-//        final ParcelEntity parcelEntity = new ParcelEntity(1, -10.0f, recipientEntity, recipientEntity, "Pickup", "abcd1234");
-//
-//        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
-//        Validator validator = factory.getValidator();
-//
-//        Set<ConstraintViolation<ParcelEntity>> violations = validator.validate(parcelEntity);
-//        for (ConstraintViolation<ParcelEntity> violation : violations)
-//        {
-//            log.info(violation.getMessage());
-//            return;
-//        }
-//        fail("Validation should fail!");
-//    }
+        // If it returns false, then Entity has wrong information
+        if(!TestValidation.entityValidated(parcelEntity)){
+            fail("Validations should work.");
+        }
+    }
+
+    @Test
+    public void parcelEntityTestNotValid(){
+        log.info("Test ParcelEntity");
+        final ParcelEntity parcelEntity = new ParcelEntity(1, -10.0f, recipientEntity, recipientEntity, "Pickup", "abcd1234");
+
+        if(TestValidation.entityValidated(parcelEntity)){
+            fail("Validations should not work.");
+        }
+    }
 }

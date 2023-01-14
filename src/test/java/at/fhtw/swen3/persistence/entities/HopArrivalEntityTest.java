@@ -4,6 +4,7 @@ import at.fhtw.swen3.persistence.entities.HopArrivalEntity;
 import at.fhtw.swen3.persistence.entities.RecipientEntity;
 import at.fhtw.swen3.services.dto.Recipient;
 import at.fhtw.swen3.services.mapper.RecipientMapper;
+import at.fhtw.swen3.services.validation.TestValidation;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
@@ -19,41 +20,27 @@ import java.util.Set;
 import static org.junit.jupiter.api.Assertions.fail;
 
 @Slf4j
+@SpringBootTest
 public class HopArrivalEntityTest {
-    final RecipientEntity recipientEntity = new RecipientEntity(1, "Mreti", "Dobrac 12/12",
-            "1010", "Vienna", "Austria");
-    Recipient recipient = RecipientMapper.INSTANCE.entityToDto(recipientEntity);
-
 
     @Test
-    public void validationTest_Ok(){
+    public void hopArrivalEntityValid(){
         log.info("Test HopArrivalEntity");
         final HopArrivalEntity hopArrivalEntity = new HopArrivalEntity(1, "ABCD123", "Description", null);
 
-        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
-        Validator validator = factory.getValidator();
-
-        Set<ConstraintViolation<HopArrivalEntity>> violations = validator.validate(hopArrivalEntity);
-        for (ConstraintViolation<HopArrivalEntity> violation : violations)
-        {
-            log.error(violation.getMessage());
-            fail(violation.getMessage());
+        // If it returns false, then Entity has wrong information
+        if(!TestValidation.entityValidated(hopArrivalEntity)){
+            fail("Validations should work.");
         }
     }
 
     @Test
-    public void validationTest_NotOk(){
+    public void hopArrivalEntityNotValid() {
         log.info("Test HopArrivalEntity");
         final HopArrivalEntity hopArrivalEntity = new HopArrivalEntity(1, "Abcd123", "Description", null);
-
-        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
-        Validator validator = factory.getValidator();
-
-        Set<ConstraintViolation<HopArrivalEntity>> violations = validator.validate(hopArrivalEntity);
-        for (ConstraintViolation<HopArrivalEntity> violation : violations)
-        {
-            log.info(violation.getMessage());
+        // If it returns false, then Entity has wrong information
+        if(TestValidation.entityValidated(hopArrivalEntity)){
+            fail("Validations should not work.");
         }
-        fail("Validation should fail!");
     }
 }
