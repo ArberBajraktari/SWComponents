@@ -4,16 +4,7 @@ import at.fhtw.swen3.persistence.entities.RecipientEntity;
 import at.fhtw.swen3.services.validation.TestValidation;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import javax.validation.ConstraintViolation;
-import javax.validation.Validation;
-import javax.validation.Validator;
-import javax.validation.ValidatorFactory;
-import java.util.Set;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 @Slf4j
@@ -22,7 +13,7 @@ class RecipientEntityTest {
 
     @Test
     public void recipientEntityTestValid(){
-        log.info("Test validationTest");
+        log.info("Test RecipientEntity Validation should work");
 
         // Entity attributes are entered correctly
         // Validation should work and return True (after validating attributes)
@@ -37,7 +28,7 @@ class RecipientEntityTest {
 
     @Test
     public void recipientEntityTestNotValid() {
-        log.info("Test validationTest");
+        log.info("Test RecipientEntity Validation should not work");
 
         final RecipientEntity recipientEntity = new RecipientEntity(1, "Mreti", "Dobrac",
                 "110", "vienna", "Austria");

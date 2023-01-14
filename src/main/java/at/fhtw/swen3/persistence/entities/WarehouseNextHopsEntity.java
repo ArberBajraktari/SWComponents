@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 
 
 @Getter
@@ -26,5 +28,6 @@ public class WarehouseNextHopsEntity {
 
     @JoinColumn(name="hop_id", referencedColumnName="hop_id")
     @ManyToOne
+    @NotNull
     private HopEntity hop;
 }

@@ -46,6 +46,7 @@ public class ParcelEntity {
     //TrackingInformation
     private String value;
 //    private TrackingInformation.StateEnum state;
+//    @NotNull per te dyja
 //    private List<HopArrival> visitedHops = new ArrayList<>();
 //    private List<HopArrival> futureHops = new ArrayList<>();
 
