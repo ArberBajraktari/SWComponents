@@ -11,6 +11,8 @@ public interface ParcelService {
 
     void getEntityWithId(int id);
 
+    ParcelEntity getParcelByTrackingId(String id) throws BLException;
+
     public ParcelEntity getTrackingInformation(String trackingId);
 
     ParcelEntity getEntityByTrackingId(String trackingId);

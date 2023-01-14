@@ -25,5 +25,5 @@ curl -X POST "http://localhost:8080/parcel" -H "accept: application/json" -H "Co
 docker run --name some-postgis -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -v $PWD/postgres-data:/var/lib/postgresql/data -d postgis/postgis
 
 ### For Windows
-to-add
+docker run --name some-postgis -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -v %cd%/postgres-data:/var/lib/postgresql/data -d postgis/postgis
 ## boh

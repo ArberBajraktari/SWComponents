@@ -9,17 +9,22 @@ import static org.aspectj.bridge.MessageUtil.fail;
 
 @Slf4j
 public class TestValidation<T> {
-    public <T> void testValidation(T t){
+    public static <T> boolean entityValidated(T t){
         ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
         Validator validator = factory.getValidator();
 
         Set<ConstraintViolation<T>> violations = validator.validate(t);
-        for (ConstraintViolation<T> violation : violations)
-        {
-            log.error(violation.getMessage());
-            if(!violations.isEmpty()){
-                throw new ConstraintViolationException(violations);
+
+        if(!violations.isEmpty()){
+            for (ConstraintViolation<T> violation : violations)
+            {
+                log.error(violation.getMessage());
             }
+            return false;
+        }
+        else {
+            return true;
+            //throw new ConstraintViolationException(violations);
         }
     }
 }
