@@ -147,7 +147,12 @@ public interface ParcelApi {
         getRequest().ifPresent(request -> {
             for (MediaType mediaType: MediaType.parseMediaTypes(request.getHeader("Accept"))) {
                 if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
-                    String response = addParcel(parcel);
+                    String response = null;
+                    try {
+                        response = addParcel(parcel);
+                    } catch (BLException e) {
+                        e.printStackTrace();
+                    }
                     ApiUtil.setExampleResponse(request, "application/json", response);
                     break;
                 }
