@@ -9,6 +9,12 @@ public interface ParcelService {
 
     String submitNewParcel(ParcelEntity newParcel) throws BLException;
 
+    String createUniqueTrackingId();
+
+    String getUniqueTrackingId();
+
+    boolean trackingIdExists(String trackingId);
+
     void getEntityWithId(int id) throws BLException;
 
     ParcelEntity getParcelByTrackingId(String id) throws BLException;
@@ -17,4 +23,5 @@ public interface ParcelService {
 
     ParcelEntity getEntityByTrackingId(String trackingId);
 
+    String transferParcel(ParcelEntity parcelEntity, String trackingId) throws BLException;
 }

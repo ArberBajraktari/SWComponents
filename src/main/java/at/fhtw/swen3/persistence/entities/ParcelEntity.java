@@ -43,12 +43,12 @@ public class ParcelEntity {
     //TrackingInformation
     private String value;
 //    private TrackingInformation.StateEnum state;
-    @NotNull
-    @OneToMany
+//    @NotNull
+    @OneToMany(cascade = {CascadeType.ALL})
     private List<HopArrivalEntity> visitedHops = new ArrayList<>();
 
-    @NotNull
-    @OneToMany
+//    @NotNull
+    @OneToMany(cascade = {CascadeType.ALL})
     private List<HopArrivalEntity> futureHops = new ArrayList<>();
 
     //NewParcelInfo

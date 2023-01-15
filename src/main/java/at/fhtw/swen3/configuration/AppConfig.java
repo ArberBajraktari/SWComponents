@@ -1,5 +1,6 @@
 package at.fhtw.swen3.configuration;
 
+import at.fhtw.swen3.persistence.repositories.HopRepository;
 import at.fhtw.swen3.persistence.repositories.ParcelRepository;
 import at.fhtw.swen3.persistence.repositories.RecipientRepository;
 import at.fhtw.swen3.persistence.repositories.WarehouseRepository;
@@ -13,8 +14,8 @@ public class AppConfig {
 
 
     @Bean
-    public ParcelServiceImpl parcelService(ParcelRepository parcelRepository, RecipientRepository recipientRepository) {
-        return new ParcelServiceImpl(parcelRepository, recipientRepository);
+    public ParcelServiceImpl parcelService(ParcelRepository parcelRepository, RecipientRepository recipientRepository, HopRepository hopRepository) {
+        return new ParcelServiceImpl(parcelRepository, recipientRepository, hopRepository);
     }
 
     @Bean

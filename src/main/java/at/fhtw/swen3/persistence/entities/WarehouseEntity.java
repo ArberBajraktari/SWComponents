@@ -28,7 +28,7 @@ public class WarehouseEntity {
 
 
     @NotNull
-    @OneToMany
+    @OneToMany(cascade = {CascadeType.ALL})
 //    @JoinColumn
     private List<WarehouseNextHopsEntity> nextHops = new ArrayList<>();
 }

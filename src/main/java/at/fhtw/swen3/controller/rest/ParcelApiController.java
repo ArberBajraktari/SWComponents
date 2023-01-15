@@ -66,20 +66,16 @@ public class ParcelApiController implements ParcelApi {
                 if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
                     ParcelEntity parcelEntity = ParcelMapper.INSTANCE.dtoToEntity(parcel);
                     try {
-                        parcelServiceImpl.submitNewParcel(parcelEntity);
-                        ApiUtil.setExampleResponse(request, "application/json", "Success");
+                        String res = parcelServiceImpl.submitNewParcel(parcelEntity);
+                        ApiUtil.setExampleResponse(request, "application/json", "{\"trackingId\": \"" + res + "\"}");
                         status.set(1);
                     } catch (BLException e) {
                         status.set(2);
                         ErrorEntity errorEntity = e.getErrorEntity();
                         Error error = ErrorMapperImpl.INSTANCE.entityToDto(errorEntity);
-
                         String jsonString = DtoToJson.toJson(error);
-
                         ApiUtil.setExampleResponse(request, "application/json", jsonString);
                     }
-//                    String exampleString = "{ \"trackingId\" : \"ABC\" }";
-//                    ApiUtil.setExampleResponse(request, "application/json", exampleString);
                     break;
                 }
             }
@@ -116,30 +112,29 @@ public class ParcelApiController implements ParcelApi {
             @Pattern(regexp = "^[A-Z0-9]{9}$") @Parameter(name = "trackingId", description = "The tracking ID of the parcel. E.g. PYJRB4HZ6 ", required = true) @PathVariable("trackingId") String trackingId,
             @Parameter(name = "Parcel", description = "", required = true) @Valid @RequestBody Parcel parcel
     ) {
+        AtomicInteger status = new AtomicInteger();
         getRequest().ifPresent(request -> {
             for (MediaType mediaType: MediaType.parseMediaTypes(request.getHeader("Accept"))) {
                 if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
-                    String exampleString = "{ \"trackingId\" : \"PYJRB4HZ6\" }";
-                    ApiUtil.setExampleResponse(request, "application/json", exampleString);
+                    ParcelEntity parcelEntity = ParcelMapper.INSTANCE.dtoToEntity(parcel);
+                    try {
+                        String res = parcelServiceImpl.transferParcel(parcelEntity, trackingId);
+                        ApiUtil.setExampleResponse(request, "application/json", "{\"trackingId\": \"" + res + "\"}");
+                        status.set(1);
+                    } catch (BLException e) {
+                        status.set(2);
+                        ErrorEntity errorEntity = e.getErrorEntity();
+                        Error error = ErrorMapperImpl.INSTANCE.entityToDto(errorEntity);
+                        String jsonString = DtoToJson.toJson(error);
+                        ApiUtil.setExampleResponse(request, "application/json", jsonString);
+                    }
                     break;
                 }
             }
         });
-        return new ResponseEntity<>(HttpStatus.NOT_IMPLEMENTED);
+        if(status.get() == 1){
+            return new ResponseEntity<>(HttpStatus.CREATED);
+        }
+        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
     }
-
-
-
-//    @Override
-//    public String addParcel(Parcel parcel) throws BLException {
-//        ParcelEntity parcelEntity = ParcelMapperImpl.INSTANCE.dtoToEntity(parcel);
-//        return this.parcelServiceImpl.submitNewParcel(parcelEntity);
-//    }
-//
-//    @Override
-//    public String getParcel(String trackingId) {
-//        ParcelEntity parcelEntity = this.parcelServiceImpl.getEntityByTrackingId(trackingId);
-//        return parcelEntity.getValue();
-//    }
-
 }
