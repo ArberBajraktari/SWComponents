@@ -37,7 +37,7 @@ class ParcelServiceImplTest {
     @Test
     void submitNewParcel() {
         try {
-            if(TestValidation.entityValidated(parcelEntity)){
+            if(TestValidation.entityValidatedForTests(parcelEntity)){
                 parcelServiceImpl.submitNewParcel(parcelEntity);
             }
         } catch (BLException e) {

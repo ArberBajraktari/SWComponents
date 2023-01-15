@@ -9,7 +9,7 @@ public interface ParcelService {
 
     String submitNewParcel(ParcelEntity newParcel) throws BLException;
 
-    void getEntityWithId(int id);
+    void getEntityWithId(int id) throws BLException;
 
     ParcelEntity getParcelByTrackingId(String id) throws BLException;
 

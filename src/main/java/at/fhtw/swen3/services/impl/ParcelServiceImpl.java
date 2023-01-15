@@ -1,14 +1,22 @@
 package at.fhtw.swen3.services.impl;
 
+import at.fhtw.swen3.persistence.entities.ErrorEntity;
+import at.fhtw.swen3.persistence.entities.HopArrivalEntity;
 import at.fhtw.swen3.persistence.entities.ParcelEntity;
 import at.fhtw.swen3.persistence.repositories.ParcelRepository;
 import at.fhtw.swen3.persistence.repositories.RecipientRepository;
 import at.fhtw.swen3.services.BLException;
+import at.fhtw.swen3.services.DALException;
 import at.fhtw.swen3.services.ParcelService;
+import at.fhtw.swen3.services.validation.TestValidation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import javax.validation.ConstraintViolationException;
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 @Slf4j
@@ -23,18 +31,23 @@ public class ParcelServiceImpl implements ParcelService{
 
     @Override
     public String submitNewParcel(ParcelEntity parcelEntity) throws BLException {
-        try {
+        try{
+            TestValidation.entityValidated(parcelEntity);
             parcelRepo.saveAndFlush(parcelEntity);
-            return "Saved";
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-            throw new BLException(e, "Failed to submit New Parcel");
         }
+        catch(ConstraintViolationException e){
+            throw new BLException(e, "Data not valid");
+        }
+            return "Saved";
     }
 
     @Override
-    public void getEntityWithId(int id) {
-        parcelRepo.findById(id);
+    public void getEntityWithId(int id) throws BLException {
+        try {
+            parcelRepo.findById(id);
+        } catch (Exception e) {
+            throw new BLException(e, "Failed to submit New Parcel");
+        }
         log.info("Finding Parcel via ID");
     }
 

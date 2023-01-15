@@ -1,13 +1,17 @@
 package at.fhtw.swen3.services.mapper;
 
+import at.fhtw.swen3.persistence.entities.GeoCoordinateEntity;
+import at.fhtw.swen3.persistence.entities.GeoCoordinateEntity.GeoCoordinateEntityBuilder;
 import at.fhtw.swen3.persistence.entities.HopEntity;
+import at.fhtw.swen3.persistence.entities.HopEntity.HopEntityBuilder;
+import at.fhtw.swen3.services.dto.GeoCoordinate;
 import at.fhtw.swen3.services.dto.Hop;
 import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-01-14T15:03:05+0100",
-    comments = "version: 1.4.2.Final, compiler: javac, environment: Java 19 (Oracle Corporation)"
+    date = "2023-01-15T16:52:17+0100",
+    comments = "version: 1.4.2.Final, compiler: javac, environment: Java 17.0.2 (Oracle Corporation)"
 )
 public class HopMapperImpl implements HopMapper {
 
@@ -24,6 +28,7 @@ public class HopMapperImpl implements HopMapper {
         hop.setDescription( hopEntity.getDescription() );
         hop.setProcessingDelayMins( hopEntity.getProcessingDelayMins() );
         hop.setLocationName( hopEntity.getLocationName() );
+        hop.setLocationCoordinates( geoCoordinateEntityToGeoCoordinate( hopEntity.getLocationCoordinates() ) );
 
         return hop;
     }
@@ -34,14 +39,41 @@ public class HopMapperImpl implements HopMapper {
             return null;
         }
 
-        HopEntity hopEntity = new HopEntity();
+        HopEntityBuilder hopEntity = HopEntity.builder();
 
-        hopEntity.setHopType( hop.getHopType() );
-        hopEntity.setCode( hop.getCode() );
-        hopEntity.setDescription( hop.getDescription() );
-        hopEntity.setProcessingDelayMins( hop.getProcessingDelayMins() );
-        hopEntity.setLocationName( hop.getLocationName() );
+        hopEntity.hopType( hop.getHopType() );
+        hopEntity.code( hop.getCode() );
+        hopEntity.description( hop.getDescription() );
+        hopEntity.processingDelayMins( hop.getProcessingDelayMins() );
+        hopEntity.locationName( hop.getLocationName() );
+        hopEntity.locationCoordinates( geoCoordinateToGeoCoordinateEntity( hop.getLocationCoordinates() ) );
 
-        return hopEntity;
+        return hopEntity.build();
+    }
+
+    protected GeoCoordinate geoCoordinateEntityToGeoCoordinate(GeoCoordinateEntity geoCoordinateEntity) {
+        if ( geoCoordinateEntity == null ) {
+            return null;
+        }
+
+        GeoCoordinate geoCoordinate = new GeoCoordinate();
+
+        geoCoordinate.setLat( geoCoordinateEntity.getLat() );
+        geoCoordinate.setLon( geoCoordinateEntity.getLon() );
+
+        return geoCoordinate;
+    }
+
+    protected GeoCoordinateEntity geoCoordinateToGeoCoordinateEntity(GeoCoordinate geoCoordinate) {
+        if ( geoCoordinate == null ) {
+            return null;
+        }
+
+        GeoCoordinateEntityBuilder geoCoordinateEntity = GeoCoordinateEntity.builder();
+
+        geoCoordinateEntity.lat( geoCoordinate.getLat() );
+        geoCoordinateEntity.lon( geoCoordinate.getLon() );
+
+        return geoCoordinateEntity.build();
     }
 }

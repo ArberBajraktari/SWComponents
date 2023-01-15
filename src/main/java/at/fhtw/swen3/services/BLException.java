@@ -13,7 +13,12 @@ public class BLException extends Exception{
         this.errorMessage = errorMessage;
     }
 
+    public BLException(String errorMessage){
+        this.innerException = new Exception();
+        this.errorMessage = errorMessage;
+    }
+
     public ErrorEntity getErrorEntity(){
-        return this.errorEntity;
+        return new ErrorEntity(1, errorMessage);
     }
 }

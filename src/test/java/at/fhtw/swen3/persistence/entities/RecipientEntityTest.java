@@ -21,7 +21,7 @@ class RecipientEntityTest {
                 "1010", "Vienna", "Austria");
 
         // If it returns false, then Entity has wrong information
-        if(!TestValidation.entityValidated(recipientEntity)){
+        if(!TestValidation.entityValidatedForTests(recipientEntity)){
             fail("Validations should work.");
         }
     }
@@ -33,7 +33,7 @@ class RecipientEntityTest {
         final RecipientEntity recipientEntity = new RecipientEntity(1, "Mreti", "Dobrac",
                 "110", "vienna", "Austria");
 
-        if(TestValidation.entityValidated(recipientEntity)){
+        if(TestValidation.entityValidatedForTests(recipientEntity)){
             fail("Validations should not work.");
         }
     }

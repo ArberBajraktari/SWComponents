@@ -18,7 +18,7 @@ class WarehouseEntityTest {
         List<WarehouseNextHopsEntity> nextHops = new ArrayList<>();
         final WarehouseEntity warehouseEntity = new WarehouseEntity(1, 2, nextHops);
 
-        if(!TestValidation.entityValidated(warehouseEntity)){
+        if(!TestValidation.entityValidatedForTests(warehouseEntity)){
             fail("Validations should work.");
         }
     }
@@ -29,7 +29,7 @@ class WarehouseEntityTest {
         List<WarehouseNextHopsEntity> nextHops = null;
         final WarehouseEntity warehouseEntity = new WarehouseEntity(1, 2, nextHops);
 
-        if(TestValidation.entityValidated(warehouseEntity)){
+        if(TestValidation.entityValidatedForTests(warehouseEntity)){
             fail("Validations should not work.");
         }
     }

@@ -16,8 +16,8 @@ public class HopArrivalEntityTest {
         log.info("Test HopArrivalEntity Validation should work");
         final HopArrivalEntity hopArrivalEntity = new HopArrivalEntity(1, "ABCD123", "Description", null);
 
-        // If it returns false, then Entity has wrong information
-        if(!TestValidation.entityValidated(hopArrivalEntity)){
+//         If it returns false, then Entity has wrong information
+        if(!TestValidation.entityValidatedForTests(hopArrivalEntity)){
             fail("Validations should work.");
         }
     }
@@ -27,7 +27,7 @@ public class HopArrivalEntityTest {
         log.info("Test HopArrivalEntity Validation should not work");
         final HopArrivalEntity hopArrivalEntity = new HopArrivalEntity(1, "Abcd123", "Description", null);
         // If it returns false, then Entity has wrong information
-        if(TestValidation.entityValidated(hopArrivalEntity)){
+        if(TestValidation.entityValidatedForTests(hopArrivalEntity)){
             fail("Validations should not work.");
         }
     }
