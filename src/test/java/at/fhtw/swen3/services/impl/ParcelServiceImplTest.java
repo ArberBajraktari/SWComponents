@@ -25,7 +25,7 @@ class ParcelServiceImplTest {
     public ParcelServiceImpl parcelServiceImpl;
 
 
-    final RecipientEntity recipientEntity = new RecipientEntity(1, "Mreti", "Dobrac 12/12",
+    final RecipientEntity recipientEntity = new RecipientEntity(2, "Mreti", "Dobrac 12/12",
             "1010", "Vienna", "Austria");
     final RecipientEntity senderEntity = new RecipientEntity(1, "Mreti", "Dobrac 12/12",
             "1010", "Vienna", "Austria");
