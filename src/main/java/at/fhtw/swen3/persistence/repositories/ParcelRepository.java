@@ -13,4 +13,6 @@ public interface ParcelRepository extends JpaRepository<ParcelEntity, Integer> {
     ParcelEntity findById(int id);
 
     ParcelEntity findByTrackingId(String trackingId);
+
+
 }

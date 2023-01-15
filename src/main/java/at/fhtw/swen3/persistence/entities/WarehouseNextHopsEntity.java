@@ -25,9 +25,6 @@ public class WarehouseNextHopsEntity {
 
     private Integer traveltimeMins;
 
-
-    @JoinColumn(name="hop_id", referencedColumnName="hop_id")
-    @ManyToOne
-    @NotNull
+    @OneToOne
     private HopEntity hop;
 }

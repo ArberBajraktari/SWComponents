@@ -1,5 +1,6 @@
 package at.fhtw.swen3.services.mapper;
 
+import at.fhtw.swen3.persistence.entities.HopArrivalEntity;
 import at.fhtw.swen3.persistence.entities.RecipientEntity;
 import at.fhtw.swen3.persistence.entities.ParcelEntity;
 import at.fhtw.swen3.services.dto.*;
@@ -14,40 +15,35 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class TrackingInformationMapperTest {
-    RecipientEntity recipientEntity = new RecipientEntity(1, "Mreti", "Dobrac",
+
+    final RecipientEntity recipientEntity = new RecipientEntity(1, "Mreti", "Dobrac 12/12",
             "1010", "Vienna", "Austria");
-    Recipient recipient = RecipientMapper.INSTANCE.entityToDto(recipientEntity);
-    RecipientEntity senderEntity = new RecipientEntity(1, "Mreti", "Koplik",
-            "1010", "Graz", "Austria");
-    Recipient sender = RecipientMapper.INSTANCE.entityToDto(senderEntity);
-
-    List<HopArrival> nextHoop = new ArrayList<>();
-
+    final RecipientEntity senderEntity = new RecipientEntity(1, "Mreti", "Dobrac 12/12",
+            "1010", "Vienna", "Austria");
+    final List<HopArrivalEntity> visitedHops = new ArrayList<>();
+    final ParcelEntity parcelEntity = new ParcelEntity(1, 10.0f, recipientEntity,
+            senderEntity, "Pickup", visitedHops, visitedHops, "ABCK12345");
 
 
 
-//    @Test
-//    void entityToDto() {
-//        //Create TrackingInfo Entity
-//        ParcelEntity parcelEntity = new ParcelEntity(1, 10.0f, recipientEntity, senderEntity, "Pickup", "abcd12345");
-//        //Turn Entity into DTO
-////        TrackingInformation trackingInformation = TrackingInformationMapper.INSTANCE.entityToDto(parcelEntity);
-//
-//        //System.out.println(trackingInformation.getState());
-//        //Assert Equals
-////        assertEquals(TrackingInformation.StateEnum.PICKUP, trackingInformation.getState());
-//    }
-//
-//    @Test
-//    void dtoToEntity() {
-//        //Create DTO
-//        TrackingInformation trackingInformation = new TrackingInformation();
-//        trackingInformation.setState(TrackingInformation.StateEnum.INTRANSPORT);
-//        trackingInformation.setFutureHops(nextHoop);
-//
-//        //Turn DTO into entity
-//        ParcelEntity parcelEntity = TrackingInformationMapper.INSTANCE.dtoToEntity(trackingInformation);
-//
-//        assertEquals("InTransport", parcelEntity.getValue());
-//    }
+
+    @Test
+    void entityToDto() {
+        //Create TrackingInfo Entity
+        //Turn Entity into DTO
+        TrackingInformation trackingInformation = TrackingInformationMapper.INSTANCE.entityToDto(parcelEntity);
+        assertEquals(TrackingInformation.StateEnum.PICKUP, trackingInformation.getState());
+    }
+
+    @Test
+    void dtoToEntity() {
+        //Create DTO
+        TrackingInformation trackingInformation = new TrackingInformation();
+        trackingInformation.setState(TrackingInformation.StateEnum.PICKUP);
+
+        //Turn DTO into entity
+        ParcelEntity parcelEntity = TrackingInformationMapper.INSTANCE.dtoToEntity(trackingInformation);
+
+        assertEquals("Pickup", parcelEntity.getValue());
+    }
 }

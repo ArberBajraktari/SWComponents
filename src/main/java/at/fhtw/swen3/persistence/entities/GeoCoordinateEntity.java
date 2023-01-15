@@ -15,7 +15,7 @@ import javax.persistence.*;
 public class GeoCoordinateEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "geo_co_id")
     private Integer id;
 

@@ -24,9 +24,10 @@ public class ParcelServiceImpl implements ParcelService{
     @Override
     public String submitNewParcel(ParcelEntity parcelEntity) throws BLException {
         try {
-            //parcelRepo.saveAndFlush(parcelEntity);
-            return "Entity Submited";
+            parcelRepo.saveAndFlush(parcelEntity);
+            return "Saved";
         } catch (Exception e) {
+            System.out.println(e.getMessage());
             throw new BLException(e, "Failed to submit New Parcel");
         }
     }

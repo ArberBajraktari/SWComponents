@@ -11,23 +11,22 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class HopMapperTest {
-    GeoCoordinateEntity locationCoordinatesEntity = new GeoCoordinateEntity();
+    GeoCoordinateEntity locationCoordinatesEntity = new GeoCoordinateEntity(1, 10.0, 20.0);
 
     @Test
     void entityToDto() {
         //Create Hop Entity
-        HopEntity hopEntity = new HopEntity(1, "type1", "abcd12345",
-                "Description", 15, "Vienna");
+        HopEntity hopEntity = new HopEntity(1, "type1", "ABCD1234",
+                "Description", 15, "Vienna", locationCoordinatesEntity);
         //Turn Entity into DTO
         Hop hop = HopMapper.INSTANCE.entityToDto(hopEntity);
 
         //Assert Equals
         assertEquals("type1", hop.getHopType());
-        assertEquals("abcd12345", hop.getCode());
+        assertEquals("ABCD1234", hop.getCode());
         assertEquals("Description", hop.getDescription());
         assertEquals(15, hop.getProcessingDelayMins());
         assertEquals("Vienna", hop.getLocationName());
-        //assertEquals(locationCoordinatesEntity, hop.getLocationCoordinates());
     }
 
     @Test
@@ -35,21 +34,19 @@ public class HopMapperTest {
         //Create DTO
         Hop hop = new Hop();
         hop.setHopType("type1");
-        hop.setCode("abcd12345");
+        hop.setCode("ABCD1234");
         hop.setDescription("Description");
         hop.setLocationName("Shkoder");
         hop.setProcessingDelayMins(10);
-        //hop.setLocationCoordinates(locationCoordinatesEntity);
 
         //Turn DTO to entity
         HopEntity hopEntity = HopMapper.INSTANCE.dtoToEntity(hop);
 
         //Assert values
         assertEquals("type1", hopEntity.getHopType());
-        assertEquals("abcd12345", hopEntity.getCode());
+        assertEquals("ABCD1234", hopEntity.getCode());
         assertEquals("Description", hopEntity.getDescription());
         assertNotEquals("Koplik", hopEntity.getLocationName());
         assertEquals(10, hopEntity.getProcessingDelayMins());
-        //assertEquals(locationCoordinates, hopEntity.getLocationCoordinates());
     }
 }

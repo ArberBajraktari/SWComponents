@@ -1,5 +1,6 @@
 package at.fhtw.swen3.persistence.entities;
 
+import at.fhtw.swen3.services.dto.GeoCoordinate;
 import lombok.*;
 
 import javax.persistence.*;
@@ -28,6 +29,6 @@ public class HopEntity {
     private String locationName;
 
 
-    //@OneToMany(targetEntity=GeoCoordinateEntity.class, mappedBy="geo_co_id", fetch=FetchType.EAGER)
-    //private GeoCoordinate locationCoordinates;
+    @OneToOne
+    private GeoCoordinateEntity locationCoordinates;
 }

@@ -26,8 +26,9 @@ public class WarehouseEntity {
 
     private Integer level;
 
+
     @NotNull
-    @JoinColumn(name="wh_next_hop_id", referencedColumnName="wh_next_hop_id")
-    @ManyToMany
+    @OneToMany
+//    @JoinColumn
     private List<WarehouseNextHopsEntity> nextHops = new ArrayList<>();
 }
