@@ -11,7 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.jupiter.api.Assertions.fail;
 
 @Slf4j
-//@SpringBootTest
+@SpringBootTest
 public class ParcelEntityTest {
     final RecipientEntity recipientEntity = new RecipientEntity(1, "Mreti", "Dobrac 12/12",
             "1010", "Vienna", "Austria");

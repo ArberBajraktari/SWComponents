@@ -9,7 +9,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 @Slf4j
-//@SpringBootTest
+@SpringBootTest
 class WarehouseEntityTest {
     @Test
     public void warehouseEntityTestValid(){
