@@ -22,7 +22,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ParcelServiceImplTest {
 
     @Autowired
-    public ParcelServiceImpl parcelService;
+    public ParcelServiceImpl parcelServiceImpl;
 
 
     final RecipientEntity recipientEntity = new RecipientEntity(1, "Mreti", "Dobrac 12/12",
@@ -38,7 +38,7 @@ class ParcelServiceImplTest {
     void submitNewParcel() {
         try {
             if(TestValidation.entityValidated(parcelEntity)){
-                parcelService.submitNewParcel(parcelEntity);
+                parcelServiceImpl.submitNewParcel(parcelEntity);
             }
         } catch (BLException e) {
             e.printStackTrace();
@@ -48,7 +48,7 @@ class ParcelServiceImplTest {
     @Test
     void getParcelByTrackingId() {
         try {
-            ParcelEntity parcelEntityRes = parcelService.getParcelByTrackingId("ABCK12345");
+            ParcelEntity parcelEntityRes = parcelServiceImpl.getParcelByTrackingId("ABCK12345");
             System.out.println(parcelEntityRes.getTrackingId());
 //            Parcel parcel = ParcelMapperImpl.INSTANCE.entityToDto(parcelEntityRes);
 //            System.out.println(parcel.toString());

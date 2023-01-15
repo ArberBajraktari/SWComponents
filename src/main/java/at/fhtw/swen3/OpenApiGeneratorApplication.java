@@ -22,7 +22,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 public class OpenApiGeneratorApplication {
     public static void main(String[] args) {
         SpringApplication.run(OpenApiGeneratorApplication.class, args);
-        log.info("testing logging with lombok");
+        for(String arg: args){
+            System.out.println(arg);
+        }
+        log.info("Application running");
     }
 
     @Bean
