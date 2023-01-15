@@ -15,7 +15,7 @@ import javax.persistence.*;
 @Entity
 public class ErrorEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "error_id")
     private Integer id;
 

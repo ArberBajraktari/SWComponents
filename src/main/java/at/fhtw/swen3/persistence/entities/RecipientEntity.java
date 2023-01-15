@@ -18,7 +18,7 @@ import javax.validation.constraints.Pattern;
 public class RecipientEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "recipient_id")
     private Integer id;
 

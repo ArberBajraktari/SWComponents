@@ -19,7 +19,7 @@ import javax.validation.constraints.NotNull;
 public class WarehouseNextHopsEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "wh_next_hop_id")
     private Integer id;
 

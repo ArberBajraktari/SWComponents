@@ -22,7 +22,7 @@ public class ParcelEntity {
     //This entity unites 3 DTOs (Parcel, TrackingInformation and NewParcelInfo)
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "parcel_id")
     private Integer id;
 
