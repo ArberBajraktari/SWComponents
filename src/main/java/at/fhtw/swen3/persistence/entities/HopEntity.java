@@ -17,7 +17,7 @@ import javax.validation.constraints.Pattern;
 public class HopEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "hop_id")
     private Integer id;
     private String hopType;

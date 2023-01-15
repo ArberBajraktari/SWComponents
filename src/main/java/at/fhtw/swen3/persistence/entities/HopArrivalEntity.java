@@ -19,7 +19,7 @@ import java.time.OffsetDateTime;
 public class HopArrivalEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "hop_arrival_id")
     private Integer id;
 

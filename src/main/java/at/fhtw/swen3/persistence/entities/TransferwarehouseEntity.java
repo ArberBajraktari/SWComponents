@@ -17,7 +17,7 @@ import javax.persistence.*;
 public class TransferwarehouseEntity{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "transfer_wh_id")
     private Integer id;
 

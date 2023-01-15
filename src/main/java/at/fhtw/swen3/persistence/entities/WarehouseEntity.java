@@ -20,7 +20,7 @@ import java.util.List;
 public class WarehouseEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "wh_id")
     private Integer id;
 
