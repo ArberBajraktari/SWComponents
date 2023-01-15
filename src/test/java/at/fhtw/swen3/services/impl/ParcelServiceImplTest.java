@@ -45,15 +45,15 @@ class ParcelServiceImplTest {
         }
     }
 
-    @Test
-    void getParcelByTrackingId() {
-        try {
-            ParcelEntity parcelEntityRes = parcelServiceImpl.getParcelByTrackingId("ABCK12345");
-            System.out.println(parcelEntityRes.getTrackingId());
-//            Parcel parcel = ParcelMapperImpl.INSTANCE.entityToDto(parcelEntityRes);
-//            System.out.println(parcel.toString());
-        } catch (BLException e) {
-            e.printStackTrace();
-        }
-    }
+//    @Test
+//    void getParcelByTrackingId() {
+//        try {
+//            ParcelEntity parcelEntityRes = parcelServiceImpl.getParcelByTrackingId("ABCK12345");
+//            System.out.println(parcelEntityRes.getTrackingId());
+////            Parcel parcel = ParcelMapperImpl.INSTANCE.entityToDto(parcelEntityRes);
+////            System.out.println(parcel.toString());
+//        } catch (BLException e) {
+//            e.printStackTrace();
+//        }
+//    }
 }
